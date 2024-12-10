@@ -4,19 +4,47 @@ icon: "lock"
 description: "Learn what it takes to authenticate to the Ds Cloud API."
 ---
 
-First you need to get an API key from the [Developer Dashboard](https://dscloud.com/dashboard/settings). You can use this API key to authenticate to the Ds Cloud API.
+To interact with the **Ds Cloud API**, you need an API key. This key serves as your unique identifier and allows you to authenticate requests securely. Follow the steps below to retrieve and use your API key.
+
+## Obtaining Your API Key
+
+1. Navigate to the [Developer Dashboard](https://dscloud.com/dashboard/settings).
+
+2. Locate the **API Key** section under **Settings**.
+
+3. Generate or copy your existing API key.
+
+***
+
+## Using Your API Key
+
+To authenticate with the Ds Cloud API, include your API key in the `Authorization` header of your HTTP requests. Below is an example of how to format the header:
 
 ```bash
 'Authorization': '<api_key>'
 ```
 
-## API Usage
-You can use the API key to authenticate to the Ds Cloud API. You can use the API key in the `Authorization` header.
-Remembering that the use of the API is subject to the [Terms of Service](https://dscloud.com/legal) and the [Acceptable Use Policy](https://dscloud.com/legal/policy).
+### Example with `curl`
 
-<Card
-  title="Limits and Restrictions"
-  href="./limitations-and-restrictions"
->
-    Learn about the limits and restrictions of the Ds Cloud API.
-</Card> 
+You can use the API key in a request as follows:
+
+```bash
+curl -X GET "https://api.dscloud.com/v1/resource" \
+-H "Authorization: <api_key>"
+```
+
+***
+
+## Important Notes
+
+* The use of the API is subject to our [Terms of Service](https://dscloud.com/legal) and the [Acceptable Use Policy](https://dscloud.com/legal/policy). Ensure compliance to avoid disruptions.
+
+* API keys should be kept private and not shared. Treat them like a password.
+
+***
+
+## Learn More
+
+<Card title="Limits and Restrictions" href="./limitations-and-restrictions">
+  Learn about the limits and restrictions of the Ds Cloud API.
+</Card>
