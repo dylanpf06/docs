@@ -1,33 +1,22 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Authentication"
+icon: "lock"
+description: "Learn what it takes to authenticate to the Ds Cloud API."
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+First you need to get an API key from the [Developer Dashboard](https://dscloud.com/dashboard/settings). You can use this API key to authenticate to the Ds Cloud API.
 
-## Welcome
+```bash
+'Authorization': '<api_key>'
+```
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## API Usage
+You can use the API key to authenticate to the Ds Cloud API. You can use the API key in the `Authorization` header.
+Remembering that the use of the API is subject to the [Terms of Service](https://dscloud.com/legal) and the [Acceptable Use Policy](https://dscloud.com/legal/policy).
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="Limits and Restrictions"
+  href="./limitations-and-restrictions"
 >
-  View the OpenAPI specification file
-</Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+    Learn about the limits and restrictions of the Ds Cloud API.
+</Card> 
