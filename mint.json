@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.dscloud.com"
   },
   "tabs": [
     {
@@ -33,19 +33,9 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Join our Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/7cMBjMfWCm"
     }
   ],
   "navigation": [
@@ -85,6 +75,8 @@
     }
   ],
   "footerSocials": {
+    "website": "https://dscloud.com",
+    "discord": "https://discord.gg/7cMBjMfWCm",
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://linkedin.com/company/mintlify"
