@@ -6,9 +6,9 @@ description: "Learn how to get started on DS Cloud with Node.js"
 
 ## 🚀 Introduction
 
-- Before you begin, make sure you have Node.js and npm installed on your system. If you don't have them yet, you can download them from the [official Node.js website](https://nodejs.org/).
-- Next, you will need to create an account on DS Cloud, which can be done through the [login page](https://dscloud.app/login). You can use either your email or Discord, or both, to create an account.
-- Finally, you need to have an active paid plan on your account. You can view our plans and purchase one according to your needs [here](https://dscloud.app/plans).
+- Ensure Node.js and npm are installed on your system. If not, download them from the [official Node.js website](https://nodejs.org/).
+- Create an account on DS Cloud via the [login page](https://dscloud.app/login) using your email, Discord, or both.
+- Make sure you have an active paid plan. View and purchase plans [here](https://dscloud.app/plans).
 
 ## ⚙️ Creating the dscloud config file
 
@@ -17,61 +17,53 @@ title="Learn about: how to make the configuration file for DS Cloud."
 icon="link"
 href="https://docs.dscloud.app/getting-started/config-file"
 >
-  The dscloud.app file is a configuration file that will be used to
-  configure your application; it will be used to define the name, description,
-  version, main file, among other things.
+  The `dscloud.app` file configures your application, defining its name, description, version, main file, and more.
 </Card>
 
 ## ▶️ Start Application
 
 <Tabs>
   <Tab title="Javascript">
-    - If the `START` field is not defined in the configuration file, DS Cloud will by default run `node` with optimization options and specific parameters. If the `START` field is defined in the configuration file, the value in the `START` field will be executed directly. For more information on configuration file parameters, visit [configuration parameters](https://docs.dscloud.app/getting-started/config-file#configuration-parameters).
+    - If the `START` field is not defined in the configuration file, DS Cloud runs `node` with optimization options and specific parameters. If the `START` field is defined, its value will be executed directly. Learn more about configuration file parameters [here](https://docs.dscloud.app/getting-started/config-file#configuration-parameters).
   </Tab>
   <Tab title="Typescript">
-    - If the `START` field is not defined in the configuration file, DS Cloud will by default run `npx tsx MAIN` to compile and execute the main TypeScript file specified by `MAIN` field. If the `START` field is defined in the configuration file, the value in the `START` field will be executed directly. For more information on configuration file parameters, visit [configuration parameters](https://docs.dscloud.app/getting-started/config-file#configuration-parameters).
+    - If the `START` field is not defined, DS Cloud runs `npx tsx MAIN` to compile and execute the main TypeScript file specified in the `MAIN` field. If the `START` field is defined, its value will be executed directly. Learn more about configuration file parameters [here](https://docs.dscloud.app/getting-started/config-file#configuration-parameters).
   </Tab>
 </Tabs>
 
-- If the `node_modules` folder does not exist, DS Cloud will run `npm install --no-package-lock --no-audit --no-fund` to install dependencies and clean the `.npm` folder.
+- If `node_modules` does not exist, DS Cloud runs `npm install --no-package-lock --no-audit --no-fund` to install dependencies and clean the `.npm` folder.
 
 ## 🖥️ Preparing Your Node.js Project
 
 ### 📁 Essential Configuration Files
 
-When preparing your Node.js project for deployment on DS Cloud, ensure that you include your configuration file (`dscloud.app/.config`) and the essential files of your application in a zip file.
+To deploy your Node.js project on DS Cloud, include your configuration file (`dscloud.app/.config`) and essential application files in a zip file.
 
-<Warning>The configuration (`dscloud.app/.config`) file must be located in the root of the zip file. Otherwise, DS Cloud will not be able to find it during deployment.</Warning>
+<Warning>
+  The configuration file (`dscloud.app/.config`) must be in the root of the zip file; otherwise, DS Cloud won't find it during deployment.
+</Warning>
 
 #### 🗑️ Files to Exclude Before Uploading
 
-- `node_modules`: This folder is not required to be sent as it will be created during the installation process in the production environment.
-- `package-lock.json`: This file is not necessary because the production environment will install dependencies based on `package.json`.
+- `node_modules`: DS Cloud will create this folder during installation in the production environment.
+- `package-lock.json`: Dependencies will be installed based on `package.json` in the production environment.
 
 ### 🤔 Why Exclude These Files?
 
-There are several reasons to exclude `node_modules` and `package-lock.json` before uploading your project:
-
-1. **Installation Consistency:** Not sending the `node_modules` folder ensures that dependencies are installed by the production environment, resulting in a consistent build free from local system discrepancies.
-
-2. **Updated Installations:** The production environment will install the latest compatible versions of the dependencies listed in `package.json`, providing a clean start for your application.
-
-3. **Reduced Upload Size:** Leaving out these files decreases the size of your upload file, which speeds up the upload process and makes deployment more efficient.
-
-By doing this, you can ensure that your Node.js application is optimally prepared and secure for deployment to DS Cloud.
+1. **Installation Consistency:** Excluding `node_modules` ensures dependencies are installed by the production environment, preventing local discrepancies.
+2. **Updated Installations:** Dependencies are installed with the latest compatible versions listed in `package.json`.
+3. **Reduced Upload Size:** Smaller upload files improve efficiency and deployment speed.
 
 ### 📄 Required Files
 
-Three files are required to host your Node project:
+Three files are essential for hosting your Node project:
 
 - [dscloud.app/.config](/getting-started/config-file)
-- mainFile.js/.ts (Example of main file)
-- [package.json](./how-to-create-your-package-json.mdx) (Dependency file)
+- Main file (`mainFile.js` or `mainFile.ts`)
+- [package.json](./how-to-create-your-package-json.mdx) (dependency file)
 
 <Note>
-  DS Cloud natively supports `TypeScript`, running your project through
-  ts-node, but it is recommended to always compile to `JavaScript` since we are
-  a production platform.
+  DS Cloud supports `TypeScript` natively, running projects through `ts-node`, but compiling to `JavaScript` is recommended for production.
 </Note>
 
 ## 💡 Troubleshooting
@@ -82,43 +74,34 @@ title="The main file is invalid or corrupted"
 icon="file"
 iconType="solid"
 >
-    This error occurs when the file defined as "main" for your application in
-    the configuration file does not exist, is written incorrectly, or the path
-    is incorrect. If your main file is inside a folder, for example, you should
-    enter `folder/file.js`.
+    Ensure the "main" file specified in the configuration exists, is correctly named, and has the correct path. For files in subfolders, use `folder/file.js`.
   </Accordion>
   <Accordion title="Bad Memory" icon="memory" iconType="solid">
-    The minimum amount of RAM required to host a bot is 256MB, and for a
-    website/API, it's 512MB. However, depending on the size and complexity of
-    your application, it may be advisable to allocate a larger amount of RAM to
-    avoid the
-    [LACK_OF_RAM](https://docs.dscloud.app/faqs/troubleshooting/LACK_OF_RAM)
-    error.
+    Minimum RAM requirements:
+    - Bots: 256MB
+    - Websites/APIs: 512MB
+    Depending on application size and complexity, allocate more RAM to avoid the [LACK_OF_RAM](https://docs.dscloud.app/faqs/troubleshooting/LACK_OF_RAM) error.
   </Accordion>
 </AccordionGroup>
 
 ## 📤 Uploading Project to DS Cloud
 
-After preparing your project files, you can now upload them to DS Cloud and host your project.
+After preparing your project files, upload them to DS Cloud to host your application.
 
 <Tabs>
-  <Tab title="Dashboard Upload">
-    Access the [DS Cloud
-    Dashboard](https://dscloud.app/dashboard/upload) and upload your project
-    files.
-    <Frame>
-      <img src="/images/uploading.gif" style={{ borderRadius: "0.2rem" }} />
-    </Frame>
+  <Tab title="Discord Upload">
+    - Go to the DS Cloud Discord server and use the `/up` command in the `#commands` channel.
+    - A new private channel will be created for you.
+    - Upload your `.zip` file in the created channel to deploy your application.
   </Tab>
   <Tab title="CLI Upload">
     <Steps>
-      <Step title="First Step">
-        First, you need to have the CLI installed in your environment. If you
-        don't have it yet, run the following command in your terminal:
+      <Step title="Install CLI">
+        Ensure the CLI is installed. Run the following command:
         ```
         npm install -g @dscloud/cli
         ```
-        If you already have it, we recommend updating it. To do this, run the following command in your terminal:
+        To update an existing installation:
         <Tabs>
           <Tab title="Windows">
             ```bash
@@ -132,20 +115,15 @@ After preparing your project files, you can now upload them to DS Cloud and host
           </Tab>
         </Tabs>
       </Step>
-      <Step title="Second Step">
-        Now, to authenticate and use other CLI commands, you will find your
-        authorization key [here](https://dscloud.app/dashboard/settings) by clicking on
-        "Request API Key". After obtaining your authorization key, run the
-        following command: 
-        ```bash 
+      <Step title="Authenticate">
+        Get your authorization key from [here](https://dscloud.app/dashboard/settings) by clicking "Request API Key". Use the following command to log in:
+        ```bash
         dscloud login
         ```
       </Step>
-      <Step title="Third Step">
-        Finally, to deploy your application to DS Cloud using the CLI, you
-        need to execute the following command, passing the path of your zip
-        file: 
-        ```bash 
+      <Step title="Upload Project">
+        Deploy your application with the CLI by executing:
+        ```bash
         dscloud upload zip
         ```
       </Step>
@@ -153,4 +131,4 @@ After preparing your project files, you can now upload them to DS Cloud and host
   </Tab>
 </Tabs>
 
-If you continue to experience any issues, please don't hesitate to [contact our support team](/company/support).
+If you encounter any issues, contact our [support team](/company/support).
