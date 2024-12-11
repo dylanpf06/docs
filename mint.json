@@ -60,6 +60,7 @@
     },
     {
       "group": "Languages",
+      "icon": "paperclip",
       "pages": [
         {
           "group": "JavaScript",
