@@ -40,49 +40,30 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
       "group": "Languages",
       "pages": [
         {
           "group": "JavaScript",
           "icon": "node-js",
           "pages": [
-            "articles/getting-started-with-nodejs",
-            "articles/how-to-create-your-package-json"
+            "languagespages/getting-started-with-nodejs",
+            "languagespages/how-to-create-your-package-json"
           ]
         },
         {
           "group": "Python",
           "icon": "python",
           "pages": [
-            "articles/getting-started-with-python",
-            "articles/how-to-create-your-requirements"
+            "languagespages/getting-started-with-python",
+            "languagespages/how-to-create-your-requirements"
           ]
         },
-        "articles/getting-started-with-java",
-        "articles/getting-started-with-rust",
-        "articles/getting-started-with-elixir",
-        "articles/getting-started-with-php",
-        "articles/getting-started-with-go",
-        "articles/getting-started-with-csharp"
+        "languagespages/getting-started-with-java",
+        "languagespages/getting-started-with-rust",
+        "languagespages/getting-started-with-elixir",
+        "languagespages/getting-started-with-php",
+        "languagespages/getting-started-with-go",
+        "languagespages/getting-started-with-csharp"
       ]
     },
     {
