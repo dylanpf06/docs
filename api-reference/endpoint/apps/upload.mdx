@@ -1,13 +1,13 @@
 ---
 title: "Upload Application"
-sidebarTitle: "/v2/apps"
+sidebarTitle: "/v1/apps"
 description: "Send an application to Ds Cloud. It has a rate limit of 1 request every 10 seconds."
-api: "POST https://api.dscloud.app/v2/apps"
+api: "POST https://api.dscloud.com/v1/apps"
 authMethod: "none"
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.app/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
 </ParamField>
 
 <ParamField body="file" type="file" placeholder="application.zip" required>
@@ -61,17 +61,17 @@ The contents of the response.
 ```json
 {
     "status": "success",
-    "code": "SUCCESS",
+    "code": "UPLOAD",
     "response": {
-        "id": "945f574e6cc14ea6818f91d7d56de101",
-        "name": "Estrelinha Legal",
-        "description": "Nossa, fui enviada na velocidade da luz! ✨",
-        "domain": null,
-        "ram": 1024,
-        "cpu": 6,
+        "id": "341Bc118",
+        "name": "Lua Cheia",
+        "description": "Cheguei brilhando no céu noturno! 🌕",
+        "domain": "luacheia.dscloud.com",
+        "ram": 2048,
+        "cpu": 4,
         "language": {
-            "name": "JavaScript",
-            "version": "recommended"
+            "name": "Python",
+            "version": "3.10"
         }
     }
 }

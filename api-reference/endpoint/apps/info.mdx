@@ -1,13 +1,13 @@
 ---
 title: "Get Application Information"
-sidebarTitle: "/v2/apps/:appId"
+sidebarTitle: "/v1/apps/:appId"
 description: "Retrieve technical information about your application."
-api: "GET https://api.dscloud.app/v2/apps/{app_id}"
+api: "GET https://api.dscloud.com/v1/apps/{app_id}"
 authMethod: "none"
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.app/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
 </ParamField>
 
 <ParamField path="app_id" type="string" placeholder="Application ID" required>
@@ -70,14 +70,14 @@ The contents of the response.
 {
   "status": "success",
   "response": {
-    "name": "Best bot forever",
-    "id": "64d0c750212742ca8704fb458c9771af",
-    "owner": "3133971456989594464",
-    "cluster": "fl-micron-1",
-    "ram": 1024,
-    "language": "rust",
-    "domain": null,
-    "custom": null
+    "name": "My Amazing App",
+    "id": "341Bc118",
+    "owner": "712357001698738216",
+    "cluster": "EU-01",
+    "ram": 2048,
+    "language": "python",
+    "domain": "example.dscloud.com",
+    "custom": "customdomain.com"
   }
 }
 ```

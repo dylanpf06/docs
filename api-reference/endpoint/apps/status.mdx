@@ -1,13 +1,13 @@
 ---
 title: "Get Application Status"
-sidebarTitle: "/v2/apps/:appId/status"
+sidebarTitle: "/v1/apps/:appId/status"
 description: "Collect status information about your application."
-api: "GET https://api.dscloud.app/v2/apps/{app_id}/status"
+api: "GET https://api.dscloud.com/v1/apps/{app_id}/status"
 authMethod: "none"
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.app/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
 </ParamField>
 
 <ParamField path="app_id" type="string" placeholder="Application ID" required>
@@ -76,17 +76,18 @@ The contents of the response.
 {
     "status": "success",
     "response": {
-        "cpu": "0.01%",
-        "ram": "31.79",
+        "cpu": "0.05%",
+        "ram": "64.32",
         "status": "running",
         "running": true,
-        "storage": "2.72MB",
+        "storage": "3.15MB",
         "network": {
-            "total": "602 KB ↑ 134 KB ↓",
-            "now": "14 KB ↑ 3.3 KB ↓"
+            "total": "750 KB ↑ 200 KB ↓",
+            "now": "20 KB ↑ 5.4 KB ↓"
         },
-        "uptime": 1662927833666
+        "uptime": 1662934567890
     }
 }
+
 ```
 </ResponseExample>

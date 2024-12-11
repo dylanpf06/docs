@@ -1,13 +1,13 @@
 ---
 title: "Start Application"
-sidebarTitle: "/v2/apps/:appId/start"
+sidebarTitle: "/v1/apps/:appId/start"
 description: "Initiate your application."
-api: "POST https://api.dscloud.app/v2/apps/{app_id}/start"
+api: "POST https://api.dscloud.com/v1/apps/{app_id}/start"
 authMethod: "none"
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.app/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
 </ParamField>
 
 <ParamField path="app_id" type="string" placeholder="Application ID" required>

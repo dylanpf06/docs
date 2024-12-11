@@ -2,12 +2,12 @@
 title: "List Deployments"
 sidebarTitle: "[...]/deployments"
 description: "Get the last 10 deployments of an application from the last 24 hours."
-api: "GET https:/api.dscloud.app/v2/apps/{app_id}/deployments"
+api: "GET https:/api.dscloud.com/v1/apps/{app_id}/deployments"
 authMethod: "none"
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.app/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
 </ParamField>
 
 <ParamField path="app_id" type="string" placeholder="Application ID" required>
@@ -45,26 +45,26 @@ The contents of the response.
 <ResponseExample>
 ```json
 {
-    "status": "success",
-    "response": [
-        [
-		    {
-			    "id": "git-393caedd68f5e5b771f6a027",
-			    "state": "pending",
-			    "date": "2023-10-16T20:27:20.513Z"
-		    },
-		    {
-			    "id": "git-393caedd68f5e5b771f6a027",
-			    "state": "clone",
-			    "date": "2023-10-16T20:27:20.536Z"
-		    },
-		    {
-			    "id": "git-393caedd68f5e5b771f6a027",
-			    "state": "success",
-			    "date": "2023-10-16T20:27:21.422Z"
-		    }
-	    ]
-    ],
+  "status": "success",
+  "response": [
+    [
+      {
+        "id": "git-7d3b1a9f8c2e5b24f15e47c8",
+        "state": "pending",
+        "date": "2024-12-03T10:00:00.000Z"
+      },
+      {
+        "id": "git-7d3b1a9f8c2e5b24f15e47c8",
+        "state": "clone",
+        "date": "2024-12-05T12:30:10.000Z"
+      },
+      {
+        "id": "git-7d3b1a9f8c2e5b24f15e47c8",
+        "state": "success",
+        "date": "2024-12-08T14:45:20.000Z"
+      }
+    ]
+  ]
 }
 ```
 </ResponseExample>
