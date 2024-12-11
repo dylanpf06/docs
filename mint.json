@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/NEW_DS_CLOUD.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/NEW_DS_CLOUD.png",
+    "light": "/logo/NEW_DS_CLOUD.png"
   },
-  "favicon": "/logo/NEW_DS_CLOUD.svg",
+  "favicon": "/logo/NEW_DS_CLOUD.png",
   "colors": {
     "primary": "#2563eb",
     "light": "#2563eb",
