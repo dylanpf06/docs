@@ -40,31 +40,27 @@
   ],
   "navigation": [
     {
-      "group": "Languages",
+      "group": "Get Started",
       "pages": [
-        {
-          "group": "JavaScript",
-          "icon": "node-js",
-          "pages": [
-            "languagespages/getting-started-with-nodejs",
-            "languagespages/how-to-create-your-package-json"
-          ]
-        },
-        {
-          "group": "Python",
-          "icon": "python",
-          "pages": [
-            "languagespages/getting-started-with-python",
-            "languagespages/how-to-create-your-requirements"
-          ]
-        },
-        "languagespages/getting-started-with-java",
-        "languagespages/getting-started-with-rust",
-        "languagespages/getting-started-with-elixir",
-        "languagespages/getting-started-with-php",
-        "languagespages/getting-started-with-go",
-        "languagespages/getting-started-with-csharp"
+        "introduction",
+        "quickstart",
+        "development"
       ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "Languages",
+      "pages": ["languagespages/nodejs-setup-guide"]
     },
     {
       "group": "API Documentation",
