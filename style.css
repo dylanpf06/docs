@@ -1,7 +1,0 @@
-  /* Estiliza o texto ao lado da logo */
-  #navbar::after {
-    content: "DsCloud"; /* Texto que aparece ao lado da logo */
-    font-size: 18px; /* Tamanho do texto */
-    font-weight: bold; /* Negrito */
-    color: white; /* Cor do texto */
-  }
