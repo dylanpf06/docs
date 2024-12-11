@@ -59,6 +59,19 @@
       ]
     },
     {
+      "group": "Languages",
+      "pages": [
+        {
+          "group": "JavaScript",
+          "icon": "node-js",
+          "pages": [
+            "Languages/nodejs-setup-guide.mdx",
+            "Languages/configuring-package-json.mdx"
+          ]
+        }
+      ]
+    },
+    {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction",
