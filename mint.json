@@ -60,6 +60,7 @@
     },
     {
       "group": "Languages",
+      "icon": "subtitles",
       "pages": ["languagespages/nodejs-setup-guide"]
     },
     {
