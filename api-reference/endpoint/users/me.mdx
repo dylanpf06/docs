@@ -101,28 +101,32 @@ The contents of the response.
 
 ```json Response
 {
-  status: 'success',
-    response: {
-    user: {
-      id: '712357001698738216',
-        name: 'dylan',
-          email: 'dylan@dscloud.com',
-            plan: {
-          name: 'Bronze',
-          memory: { limit: '1024', used: '512' },
-        duration: 1922906443000
+  "status": "success",
+  "response": {
+    "user": {
+      "id": "712357001698738216",
+      "name": "dylan",
+      "email": "dylan@dscloud.com",
+      "plan": {
+        "name": "Bronze",
+        "memory": {
+          "limit": 1024,
+          "available": 512,
+          "used": 512
+        },
+        "duration": 1922906443000
       }
     },
-    applications: [
+    "applications": [
       {
-        name: 'Ds Example APP',
-        id: '341Bc118',
-        desc: "This is a example of description",
-        ram: 300,
-        lang: 'JavaScript',
-        domain: "devservice.dscloud.com",
-        custom: "devservice.com",
-        cluster: 'EU-01'
+        "name": "Ds Example APP",
+        "id": "341Bc118",
+        "desc": "This is a example of description",
+        "ram": 300,
+        "lang": "javascript",
+        "domain": "devservice.dscloud.com",
+        "custom": "devservice.com",
+        "cluster": "EU-01"
       }
     ]
   }
