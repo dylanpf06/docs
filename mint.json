@@ -65,10 +65,24 @@
           "group": "JavaScript",
           "icon": "node-js",
           "pages": [
-            "languagespages/nodejs-setup-guide.mdx",
-            "languagespages/configuring-package-json.mdx"
+            "articles/getting-started-with-nodejs",
+            "articles/how-to-create-your-package-json"
           ]
-        }
+        },
+        {
+          "group": "Python",
+          "icon": "python",
+          "pages": [
+            "articles/getting-started-with-python",
+            "articles/how-to-create-your-requirements"
+          ]
+        },
+        "articles/getting-started-with-java",
+        "articles/getting-started-with-rust",
+        "articles/getting-started-with-elixir",
+        "articles/getting-started-with-php",
+        "articles/getting-started-with-go",
+        "articles/getting-started-with-csharp"
       ]
     },
     {
