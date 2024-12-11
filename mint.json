@@ -65,8 +65,8 @@
           "group": "JavaScript",
           "icon": "node-js",
           "pages": [
-            "languages/nodejs-setup-guide.mdx",
-            "languages/configuring-package-json.mdx"
+            "languagespages/nodejs-setup-guide.mdx",
+            "languagespages/configuring-package-json.mdx"
           ]
         }
       ]
