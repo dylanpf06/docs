@@ -60,8 +60,25 @@
     },
     {
       "group": "Languages",
-      "icon": "subtitles",
-      "pages": ["languagespages/nodejs-setup-guide"]
+      "pages": [
+        {
+          "group": "JavaScript",
+          "icon": "node-js",
+          "pages": [
+            "languagespages/nodejs-setup-guide",
+            "languagespages/configuring-package-json.mdx"
+          ]
+        },
+        {
+          "group": "Python",
+          "icon": "python",
+          "pages": [
+            "languagespages/getting-started-with-python",
+            "languagespages/how-to-create-your-requirements"
+          ]
+        },
+        "languagespages/getting-started-with-java"
+      ]
     },
     {
       "group": "API Reference",
