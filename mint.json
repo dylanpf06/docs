@@ -15,12 +15,6 @@
       "dark": "#0B0E13"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
     "name": "Dashboard",
     "url": "https://dashboard.dscloud.com"
@@ -129,6 +123,25 @@
       ]
     }
   ],
+  "api": {
+    "auth": {
+      "method": "key",
+      "name": "Authorization"
+    }
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-QX546TZG8Z"
+    }
+  },
+  "seo": {
+    "indexHiddenPages": true
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "raiseIssue": true,
+    "suggestEdit": true
+  },
   "footerSocials": {
     "website": "https://dscloud.com",
     "discord": "https://discord.gg/7cMBjMfWCm",

@@ -1,0 +1,21 @@
+/* Personalização da barra de navegação */
+#navbar {
+    display: flex; /* Para alinhar logo e texto lado a lado */
+    align-items: center;
+    padding: 0 16px; /* Adiciona espaçamento */
+  }
+  
+  /* Estiliza a logo */
+  #navbar img {
+    height: 40px; /* Ajusta o tamanho da logo */
+    margin-right: 8px; /* Espaço entre a logo e o texto */
+  }
+  
+  /* Estiliza o texto ao lado da logo */
+  #navbar::after {
+    content: "DsCloud"; /* Texto que aparece ao lado da logo */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    color: white; /* Cor do texto */
+  }
+  
