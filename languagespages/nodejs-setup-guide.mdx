@@ -94,41 +94,6 @@ After preparing your project files, upload them to DS Cloud to host your applica
     - A new private channel will be created for you.
     - Upload your `.zip` file in the created channel to deploy your application.
   </Tab>
-  <Tab title="CLI Upload">
-    <Steps>
-      <Step title="Install CLI">
-        Ensure the CLI is installed. Run the following command:
-        ```
-        npm install -g @dscloud/cli
-        ```
-        To update an existing installation:
-        <Tabs>
-          <Tab title="Windows">
-            ```bash
-            dscloud update
-            ```
-          </Tab>
-          <Tab title="Linux, macOS, and WSL">
-            ```bash
-            curl -fsSL https://cli.dscloud.app/install | bash
-            ```
-          </Tab>
-        </Tabs>
-      </Step>
-      <Step title="Authenticate">
-        Get your authorization key from [here](https://dscloud.app/dashboard/settings) by clicking "Request API Key". Use the following command to log in:
-        ```bash
-        dscloud login
-        ```
-      </Step>
-      <Step title="Upload Project">
-        Deploy your application with the CLI by executing:
-        ```bash
-        dscloud upload zip
-        ```
-      </Step>
-    </Steps>
-  </Tab>
 </Tabs>
 
 If you encounter any issues, contact our [support team](/company/support).
