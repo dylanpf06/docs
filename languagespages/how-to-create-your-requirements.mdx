@@ -37,24 +37,24 @@ After installing your dependencies in the virtual environment, run:
 pip freeze > requirements.txt
 ```
 
-This will create a `requirements.txt` file with all installed packages and their specific versions.
+This will create a `requirements.txt` file with all installed packages.
 
 ### Best Practices
 
 <Warning>
-Always specify exact versions for each package (e.g., `discord.py==2.4.0`) to ensure consistency and avoid unexpected behavior in production.
+Always list only the required packages for your project (e.g., `discord.py`) to ensure consistency and avoid unnecessary dependencies in production.
 </Warning>
 
 ### Example requirements.txt File
 ```plaintext
-flask==2.1.2
-requests==2.28.1
-discord.py==2.4.0
+flask
+requests
+discord.py
 ```
 
 ## Step 3: Review and Edit
 
-Open the `requirements.txt` file in a text editor to ensure it only contains the packages your project requires. Remove any unnecessary dependencies or update version numbers as needed.
+Open the `requirements.txt` file in a text editor to ensure it only contains the packages your project requires. Remove any unnecessary dependencies as needed.
 
 ## Step 4: Use and Share
 
@@ -66,14 +66,6 @@ To recreate your environment on a new machine:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Step 5: Deploy Your Project to DS Cloud
-
-Once your `requirements.txt` file is ready, include it in your project for deployment. Follow these steps to upload your project to DS Cloud:
-
-- Go to the DS Cloud Discord server and use the `/up` command in the `#commands` channel.
-  - A new private channel will be created for you.
-  - Upload your `.zip` file in the created channel to deploy your application.
 
 ## Bonus Tips
 
