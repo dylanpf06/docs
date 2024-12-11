@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Ds Cloud",
   "logo": {
-    "dark": "/logo/NEW_DS_CLOUD.png",
-    "light": "/logo/NEW_DS_CLOUD.png"
+    "dark": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png",
+    "light": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png"
   },
-  "favicon": "/logo/NEW_DS_CLOUD.png",
+  "favicon": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png",
   "colors": {
     "primary": "#2563eb",
     "light": "#2563eb",
@@ -60,22 +60,21 @@
     },
     {
       "group": "Languages",
-      "icon": "paperclip",
       "pages": [
         {
           "group": "JavaScript",
           "icon": "node-js",
           "pages": [
-            "languagespages/nodejs-setup-guide",
-            "languagespages/configuring-package-json"
+            "languagespages/javascript/nodejs-setup-guide",
+            "languagespages/javascript/configuring-package-json"
           ]
         },
         {
           "group": "Python",
           "icon": "python",
           "pages": [
-            "languagespages/getting-started-with-python",
-            "languagespages/how-to-create-your-requirements"
+            "languagespages/python/getting-started-with-python",
+            "languagespages/python/how-to-create-your-requirements"
           ]
         },
         "languagespages/getting-started-with-java"
