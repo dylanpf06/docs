@@ -1,13 +1,13 @@
 ---
 title: "Get information about your account"
-sidebarTitle: "/v1/users/me"
-api: "GET http://84.247.180.49:25607/v1/users/me"
+sidebarTitle: "/v2/users/me"
+api: "GET https://api.squarecloud.app/v2/users/me"
 authMethod: "authorization"
 description: "Get information about your account."
 ---
 
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://squarecloud.app/dashboard/settings).
 </ParamField>
 
 ### Response
@@ -104,29 +104,29 @@ The contents of the response.
   "status": "success",
   "response": {
     "user": {
-      "id": "712357001698738216",
-      "name": "dylan",
-      "email": "dylan@dscloud.com",
+      "id": "313397145698959364",
+      "name": "joaootavios",
+      "email": "joao@squarecloud.app",
       "plan": {
-        "name": "Bronze",
+        "name": "standard",
         "memory": {
-          "limit": 1024,
-          "available": 512,
-          "used": 512
+          "limit": 2048,
+          "available": 1536,
+          "used": 256
         },
-        "duration": 1922906443000
+        "duration": 1732072955446
       }
     },
     "applications": [
       {
-        "name": "Ds Example APP",
-        "id": "341Bc118",
+        "name": "Square Example APP",
+        "id": "446b0b4118634a1c99e73bac9a54e475",
         "desc": "This is a example of description",
-        "ram": 300,
+        "ram": 512,
         "lang": "javascript",
-        "domain": "devservice.dscloud.com",
-        "custom": "devservice.com",
-        "cluster": "EU-01"
+        "domain": "square-example-app.squareweb.app",
+        "custom": "mydomain.com",
+        "cluster": "fl-micron-1"
       }
     ]
   }
