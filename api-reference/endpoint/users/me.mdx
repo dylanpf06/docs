@@ -17,120 +17,107 @@ description: "Get information about your account."
 </ResponseField>
 
 <ResponseField name="response" type="object">
+  The contents of the response.
 
-The contents of the response.
+  <Expandable title="Toggle object">
+    <ResponseField name="user" type="object">
+      <Expandable title="Toggle object">
+        <ResponseField name="id" type="string">
+          The user's ID.
+        </ResponseField>
 
-<Expandable title="Toggle object">
+        <ResponseField name="name" type="string">
+          The user's name.
+        </ResponseField>
 
-<ResponseField name="user" type="object">
+        <ResponseField name="email" type="string">
+          The user's email.
+        </ResponseField>
 
-<Expandable title="Toggle object">
+        <ResponseField name="plan" type="object">
+          <Expandable title="Toggle object">
+            <ResponseField name="name" type="string">
+              The user's plan name.
+            </ResponseField>
 
-<ResponseField name="id" type="string">
-  The user's ID.
-</ResponseField>
+            <ResponseField name="duration" type="number">
+              The user's plan duration in milliseconds.
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
 
-<ResponseField name="name" type="string">
-  The user's name.
-</ResponseField>
+    <ResponseField name="applications" type="array">
+      <Expandable title="Toggle object">
+        <ResponseField name="name" type="string">
+          The application's name.
+        </ResponseField>
 
-<ResponseField name="email" type="string">
-  The user's email.
-</ResponseField>
+        <ResponseField name="id" type="string">
+          The application's ID.
+        </ResponseField>
 
-<ResponseField name="plan" type="object">
-<Expandable title="Toggle object">
+        <ResponseField name="desc" type="string">
+          The application's description.
+        </ResponseField>
 
-<ResponseField name="name" type="string">
-  The user's plan name.
-</ResponseField>
+        <ResponseField name="ram" type="number">
+          The application's RAM usage.
+        </ResponseField>
 
-<ResponseField name="duration" type="number">
-  The user's plan duration in milliseconds.
-</ResponseField>
+        <ResponseField name="lang" type="string">
+          The application's language.
+        </ResponseField>
 
-</Expandable>
-</ResponseField>
+        <ResponseField name="domain" type="string">
+          The application's domain.
+        </ResponseField>
 
-</Expandable>
-</ResponseField>
+        <ResponseField name="custom" type="string">
+          The application's custom domain.
+        </ResponseField>
 
-<ResponseField name="applications" type="array">
-
-<Expandable title="Toggle object">
-
-<ResponseField name="name" type="string">
-    The application's name.
-</ResponseField>
-
-<ResponseField name="id" type="string">
-    The application's ID.
-</ResponseField>
-
-<ResponseField name="desc" type="string">
-    The application's description.
-</ResponseField>
-
-<ResponseField name="ram" type="number">
-    The application's RAM usage.
-</ResponseField>
-
-<ResponseField name="lang" type="string">
-    The application's language.
-</ResponseField>
-
-<ResponseField name="domain" type="string">
-    The application's domain.
-</ResponseField>
-
-<ResponseField name="custom" type="string">
-    The application's custom domain.
-</ResponseField>
-
-<ResponseField name="cluster" type="string">
-    The application's cluster.
-</ResponseField>
-
-</Expandable>
-</ResponseField>
-
-</Expandable>
+        <ResponseField name="cluster" type="string">
+          The application's cluster.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
 </ResponseField>
 
 <ResponseExample>
-
-```json Response
-{
-  "status": "success",
-  "response": {
-    "user": {
-      "id": "712357001698738216",
-      "name": "dylan",
-      "email": "dylan@dscloud.com",
-      "plan": {
-        "name": "Bronze",
-        "memory": {
-          "limit": 1024,
-          "available": 512,
-          "used": 512
-        },
-        "duration": 1922906443000
-      }
-    },
-    "applications": [
-      {
-        "name": "Ds Example APP",
-        "id": "341Bc118",
-        "desc": "This is a example of description",
-        "ram": 300,
-        "lang": "javascript",
-        "domain": "devservice.dscloud.com",
-        "custom": "devservice.com",
-        "cluster": "EU-01"
-      }
-    ]
+  ```json Response
+  {
+    "status": "success",
+    "response": {
+      "user": {
+        "id": "712357001698738216",
+        "name": "dylan",
+        "email": "dylan@dscloud.com",
+        "plan": {
+          "name": "Bronze",
+          "memory": {
+            "limit": 1024,
+            "available": 512,
+            "used": 512
+          },
+          "duration": 1922906443000
+        }
+      },
+      "applications": [
+        {
+          "name": "Ds Example APP",
+          "id": "341Bc118",
+          "desc": "This is a example of description",
+          "ram": 300,
+          "lang": "javascript",
+          "domain": "devservice.dscloud.com",
+          "custom": "devservice.com",
+          "cluster": "EU-01"
+        }
+      ]
+    }
   }
-}
-```
-
+  ```
 </ResponseExample>
