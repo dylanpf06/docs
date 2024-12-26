@@ -53,6 +53,12 @@
       ]
     },
     {
+      "group": "Services",
+      "pages": [
+        "services/dsdb"
+      ]
+    },
+    {
       "group": "Languages",
       "pages": [
         {
