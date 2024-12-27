@@ -38,6 +38,7 @@
       "pages": [
         "getstarted/introduction",
         "getstarted/quickstart",
+        "getstarted/configfile",
         "introduction",
         "quickstart",
         "development"
