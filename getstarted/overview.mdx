@@ -24,103 +24,21 @@ import SnippetIntro2 from '/snippets/before.mdx';
 
 Once you've signed up, you can start deploying your applications on DS Cloud after selecting the plan that suits your needs.
 
-## Facilitating your journey with CLI 💻
-This Overview uses a [DS Cloud CLI](/cli) to deploy your applications. The CLI is a command-line tool that allows you to interact with DS Cloud services. You can use the CLI to deploy applications, manage services, and view logs.
-
-To use the CLI, you need to install it on your local machine. You can install the CLI using the following commands:
-
-<Frame>
-  <img src="https://cdn.dscloud.pt/blog/posts/changelog/01-02-2024/ds-cli-install.gif" />
-</Frame>
-<br/>
-
-<CodeGroup>
-```bash macOS, Linux, and WSL 
-curl -fsSL https://cli.dscloud.pt/install | bash
-```
-
-```bash Windows with npm
-npm install -g @dscloud/cli
-```
-
-```bash Windows with yarn
-yarn global add @dscloud/cli
-```
-</CodeGroup>
-
-<Steps>
-  <Step title="Read the instructions about your language">
-    <SnippetIntro />
-    <Info>For this example, we will use the JavaScript (Node.js) language.</Info>
-  </Step>
-  <Step title="Create your DS Cloud config file">
-    After installing the CLI, you need to create a configuration file. You can create a [configuration file](/getting-started/config-file) reading this article [here](/getting-started/config-file).
-
-    My configuration file looks like this:
-    ```systemd
-    MAIN=index.js
-    MEMORY=512
-    VERSION=recommended
-    DISPLAY_NAME=Robin bot
-    DESCRIPTION=This bot system is designed to help you with your daily tasks.
-    ```
-  </Step>
-  <Step title="Upload your project">
-    After this journey, you need to upload your project to DS Cloud. You can do this by running the following command:
-    ```bash
-    dscloud upload
-    ```
-  </Step>
-</Steps>
-
 ## Facilitating your journey with web interface 😉
-If you don't like command lines or prefer to use the web interface, you can upload your project directly to the DS Cloud website. To do this, follow these steps:
+If you prefer to use our Discord-based hosting system, follow these steps to deploy your application:
 
 <Steps>
-  <Step title="Access the DS Cloud website">
-    Access the [DS Cloud dashboard](https://dscloud.pt/dashboard) using your account.
+  <Step title="Join the DS Cloud Discord server">
+    Access our [DS Cloud Discord server](https://discord.gg/dscloud) and ensure your account is linked.
   </Step>
-  <Step title="Create your DS Cloud config file">
-    After accessing the dashboard, you need to create a configuration file. You can create a [configuration file](/getting-started/config-file) reading this article [here](/getting-started/config-file).
+  <Step title="Prepare your files">
+    Ensure you have a zipped project folder and a correctly configured `dscloud.config` file. Refer to our [configuration guide](/getting-started/config-file) for details.
   </Step>
-  <Step title="ZIP your project">
-    After creating the configuration file, you need to zip your project.
-    ```bash Using the CLI
-    dscloud zip
-    ```
-
-    Or you can zip your project manually:
-    <CodeGroup>
-      ```bash Windows
-      1. Locate the file or folder that you want to zip.
-      2. Press and hold (or right-click) the file or folder, select (or point to) Send to, and then select Compressed (zipped) folder.
-      3. A new zipped folder with the same name is created in the same location. To rename it, press and hold (or right-click) the folder, select Rename, and then type the new name.
-      ```
-      ```bash Linux
-      1. Locate the file or folder that you want to zip.
-      2. Right-click the file or folder, then choose Compress from the shortcut menu.
-      3. A new zipped folder with the same name is created in the same location. To rename it, press and hold (or right-click) the folder, select Rename, and then type the new name.
-      ```
-      ```bash macOS
-      1. Locate the file or folder that you want to zip.
-      2. Control-click the file or folder, then choose Compress from the shortcut menu.
-      3. A new zipped folder with the same name is created in the same location. To rename it, press and hold (or right-click) the folder, select Rename, and then type the new name.
-      ```
-    </CodeGroup>
-
-    Or you can use the command line to compress your project folder:
-    <CodeGroup>
-    ```bash macOS, Linux, and WSL
-    zip -r my-project.zip .
-    ```
-
-    ```bash Windows (powershell)
-    Compress-Archive -Path . -DestinationPath my-project.zip
-    ```
-    </CodeGroup>
-   </Step>
+  <Step title="Use the upload command">
+    In the Discord server, go to the `#commands` channel and use the `/up` command. The bot will prompt you to upload your zip file and the `dscloud.config` file. Simply drag and drop both files into the response field.
+  </Step>
   <Step title="Deploy your project">
-    After uploading your project, click on the "Add New" button to deploy your project.
+    Once the files are uploaded, the bot will handle the deployment process. You’ll receive a confirmation message with details about your application.
   </Step>
 </Steps>
 
