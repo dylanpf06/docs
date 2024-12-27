@@ -1,0 +1,89 @@
+---
+title: "Quickstart"
+sidebarTitle: "Quickstart"
+icon: "square-terminal"
+description: "Go from zero to hero in minutes with DS Cloud. This guide will help you get started with DS Cloud and understand the power of our platform."
+---
+
+## DS Cloud Services 🚀
+DS Cloud has been designed from the ground up to be a developer-friendly platform. The platform is composed of various services that can be used to deploy applications quickly and securely.
+
+<Card
+    title="Bot Hosting"
+    href="/services/bots"
+>
+    Deploy your bots to DS Cloud and receive the best solutions for bot hosting. 
+    DS Cloud offers strategic locations for the most popular platforms, ensuring low latency and high availability.
+</Card>
+
+<Card
+    title="Web Hosting"
+    href="/services/web"
+>
+    Deploy your web applications to DS Cloud and receive the best solutions for web hosting.
+    We provide premium Cloudflare integration, fast DNS, and a Web Application Firewall (WAF) to ensure optimal performance and security.
+</Card>
+
+<Card
+    title="Serverless Storage, Blob Storage"
+    href="/services/blob"
+>
+    Store your data with DS Cloud and enjoy the benefits of serverless storage. 
+    Our storage service is designed to be simple, scalable, and cost-effective.
+</Card>
+
+<Snippet file="before-begin.mdx" />
+
+## Upload Your Project 😁
+You can upload your project to DS Cloud in a few simple steps, as shown below:
+
+<Steps>
+  <Step title="First, read the instructions for your language.">
+    <Snippet file="languages.mdx" />
+    <Info>For this example, we will use the JavaScript (Node.js) language.</Info>
+  </Step>
+  <Step title="Create your DS Cloud config file.">
+    After accessing the dashboard, create a configuration file. You can learn how to create a [configuration file](/getting-started/config-file) by reading this article [here](/getting-started/config-file).
+ 
+    ```systemd Example of a config file for a bot
+    MAIN=index.js
+    MEMORY=512
+    VERSION=recommended
+    DISPLAY_NAME=Batman Bot
+    DESCRIPTION=This bot is the dark knight of the night.
+    ```
+
+    ```systemd Example of a config file for a web application (URL configured to be "batman.dscloud.app")
+    MAIN=index.js
+    MEMORY=512
+    VERSION=recommended
+    SUBDOMAIN=batman
+    START=npm run build && npm run start
+    DISPLAY_NAME=Batman Website
+    DESCRIPTION=This website is the dark knight of the night.
+    ```
+  </Step>
+  <Step title="ZIP your project.">
+    After creating the configuration file, zip your project using the steps below:
+    <CodeGroup>
+      ```bash Windows
+      1. Locate the file or folder that you want to zip.
+      2. Right-click the file or folder, select "Send to," and then select "Compressed (zipped) folder."
+      3. A new zipped folder will be created in the same location. To rename it, right-click the folder, select "Rename," and then type the new name.
+      ```
+      ```bash Linux
+      1. Locate the file or folder that you want to zip.
+      2. Right-click the file or folder, then choose "Compress" from the shortcut menu.
+      3. A new zipped folder will be created in the same location. To rename it, right-click the folder, select "Rename," and then type the new name.
+      ```
+      ```bash macOS
+      1. Locate the file or folder that you want to zip.
+      2. Control-click the file or folder, then choose "Compress" from the shortcut menu.
+      3. A new zipped folder will be created in the same location. To rename it, right-click the folder, select "Rename," and then type the new name.
+      ```
+    </CodeGroup>
+   </Step>
+  <Step title="Finally, upload your project. 😉">
+    After zipping your project, click on the "Add New" button in the dashboard to deploy it.
+  </Step>
+</Steps>
