@@ -37,6 +37,7 @@
       "group": "Get Started",
       "pages": [
         "getstarted/introduction",
+        "getstarted/quickstart",
         "introduction",
         "quickstart",
         "development"
