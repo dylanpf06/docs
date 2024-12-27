@@ -1,129 +1,113 @@
 ---
-title: "Website Hosting with DSCloud"
-description: "Explore the features and robust support DSCloud offers for hosting your website, with detailed steps for smooth deployment and advanced configurations."
+title: "Website Hosting with DS Cloud"
+description: "Explore the features and robust support DS Cloud offers for hosting your website, with detailed steps for smooth deployment and advanced configurations."
 icon: "globe"
 ---
 
-<img src="/images/services/sites.png" alt="DSCloud Website Hosting" />
-
-**DSCloud**, an innovative cloud platform, provides robust and reliable support for hosting various frameworks. This guide will walk you through the website hosting features and support DSCloud offers, highlighting its advanced configurations and easy-to-use interface.
+**DS Cloud**, an innovative cloud platform, provides robust and reliable support for hosting various frameworks. This guide will walk you through the website hosting features and support DS Cloud offers, highlighting its advanced configurations and easy-to-use interface.
 
 ## Features and Support
 
 <CardGroup cols={1}>
-    <Card title="Domain Configuration" icon="globe" href="https://docs.dscloud.app/tutorials/how-to-set-up-your-domain">
-      To get started with DSCloud, the first step is to configure your custom domain. By linking your domain to DSCloud, you ensure a seamless and personalized web hosting experience. Detailed instructions are available [here](https://docs.dscloud.app/tutorials/how-to-set-up-your-domain) for easy domain setup.
-    </Card>
+  <Card title="Domain Configuration" icon="globe" href="https://docs.dscloud.app/tutorials/how-to-set-up-your-domain">
+    To get started with DS Cloud, the first step is to configure your custom domain. By linking your domain to DS Cloud, you ensure a seamless and personalized web hosting experience. Detailed instructions are available [here](https://docs.dscloud.app/tutorials/how-to-set-up-your-domain) for easy domain setup.
+  </Card>
 
-    <Card title="Fast DNS" icon="bolt">
-        DSCloud provides fast DNS configurations, ensuring your website loads quickly and efficiently across the globe.
-    </Card>
+  <Card title="Fast DNS" icon="bolt">
+    DS Cloud provides fast DNS configurations, ensuring your website loads quickly and efficiently across the globe.
+  </Card>
 
-    <Card title="Cloudflare Premium Integration" icon="link">
-      Benefit from the advanced features of Cloudflare Premium, which integrates smoothly with DSCloud. This provides enhanced security, faster load times, and global content delivery.
-    </Card>
+  <Card title="Cloudflare Premium Integration" icon="link">
+    Benefit from the advanced features of Cloudflare Premium, which integrates smoothly with DS Cloud. This provides enhanced security, faster load times, and global content delivery.
+  </Card>
 
-    <Card title="WAF Configuration" icon="shield-check">
-        Our advanced Web Application Firewall (WAF) ensures your website remains protected against malicious attacks, keeping your data and users safe.
-    </Card>
+  <Card title="WAF Configuration" icon="shield-check">
+    Our advanced Web Application Firewall (WAF) ensures your website remains protected against malicious attacks, keeping your data and users safe.
+  </Card>
 </CardGroup>
 
-In conclusion, DSCloud offers a comprehensive suite of features to guarantee your website's performance, security, and scalability. Whether you are building a static website or a dynamic web application, DSCloud provides the tools and support needed for success.
+In conclusion, DS Cloud offers a comprehensive suite of features to guarantee your website's performance, security, and scalability. Whether you are building a static website or a dynamic web application, DS Cloud provides the tools and support needed for success.
 
 ## Supported Languages
 
-DSCloud supports a wide range of programming languages, allowing developers to choose the most suitable technology for their projects. Here are the primary languages supported:
+DS Cloud supports a wide range of programming languages, allowing developers to choose the most suitable technology for their projects. Here are the primary languages supported:
 
 <CardGroup cols={3}>
-  <Card title="Node.js" icon="node-js" href="https://docs.dscloud.app/articles/getting-started-with-nodejs">
+  <Card title="Node.js" icon="node-js" href="/languages/javascript/nodejs-setup-guide">
     Ideal for dynamic, event-driven applications.
   </Card>
 
-  <Card title="Python" icon="python" href="https://docs.dscloud.app/articles/getting-started-with-python">
+  <Card title="Python" icon="python" href="/languages/python/getting-started-with-python">
     Widely used in AI, data science, and web development.
   </Card>
 
-  <Card title="Java" icon="java" href="https://docs.dscloud.app/articles/getting-started-with-java">
+  <Card title="Java" icon="java" href="/languages/getting-started-with-java">
     A powerful language for enterprise solutions and Android apps.
-  </Card>
-
-  <Card title="Elixir" icon="droplet" href="https://docs.dscloud.app/articles/getting-started-with-elixir">
-    Known for concurrent, distributed systems and scalability.
-  </Card>
-
-  <Card title="Rust" icon="rust" href="https://docs.dscloud.app/articles/getting-started-with-rust">
-    Focused on performance and memory safety, perfect for low-level system applications.
-  </Card>
-
-  <Card title="PHP" icon="php" href="https://docs.dscloud.app/articles/getting-started-with-php">
-    Great for server-side scripting and web development.
-  </Card>
-
-  <Card title="Go" icon="golang" href="https://docs.dscloud.app/articles/getting-started-with-go">
-    Known for simplicity and efficiency in high-performance applications.
-  </Card>
-
-  <Card title="HTML/CSS" icon="html5">
-    Perfect for creating static websites with great design and user experience.
-  </Card>
-
-  <Card title="C#" icon="c" href="https://docs.dscloud.app/articles/getting-started-with-csharp">
-    Versatile for building desktop applications, web services, and games.
   </Card>
 </CardGroup>
 
-DSCloud's extensive language support ensures you have the flexibility to choose the best tools for your web development needs.
+DS Cloud's extensive language support ensures you have the flexibility to choose the best tools for your web development needs.
 
-## How to Host Your Website on DSCloud
+## How to Host Your Website on DS Cloud
 
 <Steps>
   <Step title="Configuration File" icon="file">
-    The first step to hosting your website on **DSCloud** is to create a configuration file. This file serves as a blueprint for your application, defining settings that DSCloud uses for deployment. You can follow detailed instructions for creating this file [here](https://docs.dscloud.app/getting-started/config-file).
+    The first step to hosting your website on **DS Cloud** is to create a configuration file. This file serves as a blueprint for your application, defining settings that DS Cloud uses for deployment. You can follow detailed instructions for creating this file [here](/getting-started/config-file).
 
     Make sure the configuration file includes:
-    - **SUBDOMAIN**: Your website’s subdomain.<br/>
-    Example: `SUBDOMAIN: test` (test.dsweb.app)
-    - **MEMORY**: Set the required RAM (minimum of 512MB).
+
+    * **SUBDOMAIN**: Your website’s subdomain.<br />
+      Example: `SUBDOMAIN: test` (test.dsweb.app)
+
+    * **MEMORY**: Set the required RAM (minimum of 512MB).
   </Step>
-  
+
   <Step title="Create a ZIP File" icon="file-zip">
-    After preparing the configuration file, zip your website files along with the **DSCloud** configuration file. Make sure to exclude unnecessary files such as `node_modules`, `package-lock.json`, `pyproject.toml`, `__pycache__`, and others that can be generated automatically. For a list of files you don't need to upload, refer to our [guide](https://docs.dscloud.app/faqs/automatic-deletion-files-when-deploying-an-application-to-dscloud).
+    After preparing the configuration file, zip your website files along with the **DS Cloud** configuration file. Make sure to exclude unnecessary files such as `node_modules`, `package-lock.json`, `pyproject.toml`, `__pycache__`, and others that can be generated automatically. For a list of files you don't need to upload, refer to our [guide](/faqs/automatic-deletion-files-when-deploying-an-application-to-dscloud).
   </Step>
-  
+
   <Step title="Include Dependency Files" icon="box">
-    Ensure that you include the dependency file in the .zip (e.g., `package.json` for Node.js or `requirements.txt` for Python). These files tell DSCloud which dependencies to install to run your application properly.
+    Ensure that you include the dependency file in the .zip (e.g., `package.json` for Node.js or `requirements.txt` for Python). These files tell DS Cloud which dependencies to install to run your application properly.
   </Step>
 
   <Step title="Upload Your Website" icon="arrow-up">
-    Once your website files are ready and zipped, go to the **DSCloud Discord** server and use the `/up` command in the #commands channel to start the upload process.
+    Once your website files are ready and zipped, go to the **DS Cloud Discord** server and use the `/up` command in the #commands channel to start the upload process.
 
-    After entering the command, the bot will prompt you to upload your .zip file. Drag and drop the file into the response field to deploy your website on DSCloud.
+    After entering the command, the bot will prompt you to upload your .zip file. Drag and drop the file into the response field to deploy your website on DS Cloud.
   </Step>
 
   <Step title="Common Deployment Errors" icon="x">
     <Warning>If you encounter errors during the upload process, consult our troubleshooting guide. If the issue persists, our support team is always available to help resolve any issues. Our goal is to ensure your deployment is smooth and successful.</Warning>
+
     <AccordionGroup>
       <Accordion title="INVALID_DEPENDENCY" icon="box">
         This error occurs if the dependency file is missing. If using Node.js, create the `package.json` file, and for Python, ensure the `requirements.txt` is present.
       </Accordion>
+
       <Accordion title="INSUFFICIENT_MEMORY" icon="memory">
         This error appears if the memory setting in your configuration file is too low or not specified. Ensure the minimum required memory (512MB) is set.
       </Accordion>
+
       <Accordion title="INVALID_MAIN_FILE" icon="file-code">
         This happens when the "main" file defined in your configuration does not exist. Double-check the file name and path.
       </Accordion>
+
       <Accordion title="MISSING_CONFIG" icon="file-signature">
         Ensure that the configuration file is correctly included in the root of your .zip file and is in the correct format.
       </Accordion>
+
       <Accordion title="MISSING_MEMORY_FIELD" icon="memory">
         This error occurs when the **MEMORY** field is missing in the configuration file. Ensure this field is properly set with the amount of RAM required.
       </Accordion>
+
       <Accordion title="INVALID_DISPLAY_NAME" icon="file">
-        The **DISPLAY_NAME** field must be 32 characters or less. If this field is incorrect or missing, it will cause an error during deployment.
+        The **DISPLAY\_NAME** field must be 32 characters or less. If this field is incorrect or missing, it will cause an error during deployment.
       </Accordion>
+
       <Accordion title="INVALID_START_COMMAND" icon="terminal">
-        The **START** field should specify how to launch your website. If this is missing or incorrect, DSCloud will not know how to start your application.
+        The **START** field should specify how to launch your website. If this is missing or incorrect, DS Cloud will not know how to start your application.
       </Accordion>
+
       <Accordion title="UPLOAD_FAILED" icon="x">
         This error typically occurs if the zip file is corrupted or password-protected. Make sure the file is correctly zipped and does not have a password set.
       </Accordion>
