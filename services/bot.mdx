@@ -90,7 +90,7 @@ DSCloud caters to a diverse range of programming languages, empowering developer
   <Step title="ZIP File Creation" icon="file-zip">
     With the configuration file ready, the next step is to prepare your application for upload. This involves placing the application files and the **DSCloud** configuration file inside a .zip file.
 
-    However, not all files need to be included in this .zip. Files such as `node_modules`, `package-lock.json`, `pyproject.toml`, and `poetry.lock` are not necessary, as they can be generated automatically on the server side. A list of files that do not need to be uploaded is available [here](https://docs.dscloud.app/faqs/automatic-deletion-files-when-deploying-an-application-to-dscloud), helping ensure that only necessary files are in the .zip, making the upload process faster and smoother.
+    However, not all files need to be included in this .zip. Files such as `node_modules`, `package-lock.json`, `pyproject.toml`, and `poetry.lock` are not necessary, as they can be generated automatically on the server side. A list of files that do not need to be uploaded is available [here](/faqs/automatic-deletion-files-when-deploying-an-application-to-dscloud), helping ensure that only necessary files are in the .zip, making the upload process faster and smoother.
   </Step>
 
   <Step title="Dependencies File" icon="box">
@@ -99,11 +99,10 @@ DSCloud caters to a diverse range of programming languages, empowering developer
     These files list the libraries and packages required for the correct operation of the application. Keeping these files up-to-date is crucial to avoid installation errors. Additionally, it's important to note that native dependencies, such as `node-fetch` in Node.js and `random` in Python, should not be included in these files, as they are native libraries.
   </Step>
 
-  <Step title="Bot Upload" icon="arrow-up">
-    After following all the steps and configuring your project for **DSCloud**, it's time to upload your bot. Access the upload page on the **DSCloud** website and submit your .zip file [here](https://dscloud.app/dashboard/upload).
-
-    The process is simple: select your .zip file and click the upload button. The **DSCloud** platform will initiate the deployment process, installing the necessary dependencies and configuring the environment based on the configuration file.
-  </Step>
+ <Step title="Bot Upload" icon="arrow-up">
+    After following all the steps and configuring your project for **DSCloud**, go to the **DSCloud** Discord server and use the `/up` command in the **#commands** channel. A new private channel will be created for you. 
+    Upload your .zip file in the created channel to deploy your application.
+</Step>
 
   <Step title="Common Errors During Application Deployment" icon="x">
     <Warning>Even with careful preparation, some errors may occur during the application deployment process. Below are some common errors and how to resolve them. If you encounter an error not listed here, feel free to [contact our team](https://dscloud.app/dashboard/support). We are always ready to help troubleshoot and resolve any issues that may arise during the deployment process. Remember, the goal is to successfully host your bot on **DSCloud**, and we are here to help you achieve that.</Warning>
