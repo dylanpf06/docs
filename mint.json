@@ -44,7 +44,7 @@
     {
       "group": "Services",
       "pages": [
-        "services/dsdb"
+        "services/database"
       ]
     },
     {
