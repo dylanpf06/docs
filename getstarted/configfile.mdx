@@ -123,15 +123,15 @@ We have some examples of configurations for bots, below you can see some example
 MAIN=index.js
 MEMORY=256
 VERSION=recommended
-DISPLAY_NAME=Robin bot
+DISPLAY_NAME=SuperBot
 ```
 
 ```systemd This example is a bot with all parameters.
 MAIN=index.js
 MEMORY=256
 VERSION=recommended
-DISPLAY_NAME=Robin bot
-DESCRIPTION=Robin is a bot designed to help you with your daily tasks.
+DISPLAY_NAME=SuperBot
+DESCRIPTION=SuperBot is a bot designed to help you with your daily tasks.
 AUTORESTART=true
 ```
 
@@ -139,7 +139,7 @@ AUTORESTART=true
 MAIN=index.js
 MEMORY=512
 VERSION=recommended
-DISPLAY_NAME=Batman force
+DISPLAY_NAME=NightWatcher
 START=npm run start
 ```
 
@@ -153,22 +153,9 @@ We have some examples of configurations for websites, below you can see some exa
 MAIN=index.js
 MEMORY=512
 VERSION=recommended
-DISPLAY_NAME=My website!
-DESCRIPTION=My website is very cool!
+DISPLAY_NAME=Awesome Website
+DESCRIPTION=Great content and features await you. Stay tuned for updates!
 SUBDOMAIN=mysite
-START=npm run build && npm run start
-AUTORESTART=true
-```
-
-<Info>MAIN `next.config.js` is used only so the system recognizes the project as a JavaScript or TypeScript project (another .ts/.tsx file).</Info>
-
-```systemd Next.js website example.
-MAIN=next.config.js
-MEMORY=1024
-VERSION=recommended
-DISPLAY_NAME=Next.js website
-DESCRIPTION=This website is built with Next.js.
-SUBDOMAIN=nextjs
 START=npm run build && npm run start
 AUTORESTART=true
 ```
