@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Ds Cloud",
   "logo": {
-    "dark": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png",
-    "light": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png"
+    "dark": "/logo/NEW_DS_CLOUD.png",
+    "light": "/logo/NEW_DS_CLOUD.png"
   },
   "favicon": "/logo/NEW_DS_CLOUD_NOT_BACKGROUD.png",
   "colors": {
@@ -38,21 +38,7 @@
       "pages": [
         "getstarted/introduction",
         "getstarted/quickstart",
-        "getstarted/configfile",
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "getstarted/configfile"
       ]
     },
     {
@@ -68,19 +54,19 @@
           "group": "JavaScript",
           "icon": "node-js",
           "pages": [
-            "languagespages/javascript/nodejs-setup-guide",
-            "languagespages/javascript/configuring-package-json"
+            "languages/javascript/nodejs-setup-guide",
+            "languages/javascript/configuring-package-json"
           ]
         },
         {
           "group": "Python",
           "icon": "python",
           "pages": [
-            "languagespages/python/getting-started-with-python",
-            "languagespages/python/how-to-create-your-requirements"
+            "languages/python/getting-started-with-python",
+            "languages/python/how-to-create-your-requirements"
           ]
         },
-        "languagespages/getting-started-with-java"
+        "languages/getting-started-with-java"
       ]
     },
     {
