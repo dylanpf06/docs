@@ -4,6 +4,8 @@ sidebarTitle: "Overview"
 icon: "book"
 description: "DS Cloud is a platform that provides hassle-free, user-friendly enterprise hosting services. Get started in minutes. ✨"
 ---
+import SnippetIntro from '/snippets/languages.mdx';
+import SnippetIntro2 from '/snippets/before.mdx';
 
 <CardGroup>
   <Card
@@ -18,7 +20,7 @@ description: "DS Cloud is a platform that provides hassle-free, user-friendly en
   </Card>
 </CardGroup>
 
-<Snippet file="before.mdx" />
+<SnippetIntro2 />
 
 Once you've signed up, you can start deploying your applications on DS Cloud after selecting the plan that suits your needs.
 
@@ -48,7 +50,7 @@ yarn global add @dscloud/cli
 
 <Steps>
   <Step title="Read the instructions about your language">
-    <Snippet file="languages.mdx" />
+    <SnippetIntro />
     <Info>For this example, we will use the JavaScript (Node.js) language.</Info>
   </Step>
   <Step title="Create your DS Cloud config file">
