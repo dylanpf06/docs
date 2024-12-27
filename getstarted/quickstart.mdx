@@ -4,8 +4,6 @@ sidebarTitle: "Quickstart"
 icon: "square-terminal"
 description: "Go from zero to hero in minutes with DS Cloud. This guide will help you get started with DS Cloud and understand the power of our platform."
 ---
-import SnippetIntro from '/snippets/languages.mdx';
-import SnippetIntro2 from '/snippets/before.mdx';
 
 ## DS Cloud Services 🚀
 DS Cloud has been designed from the ground up to be a developer-friendly platform. The platform is composed of various services that can be used to deploy applications quickly and securely.
@@ -34,18 +32,18 @@ DS Cloud has been designed from the ground up to be a developer-friendly platfor
     Our storage service is designed to be simple, scalable, and cost-effective.
 </Card>
 
-<SnippetIntro2 />
+<Snippet file="before-begin.mdx" />
 
 ## Upload Your Project 😁
 You can upload your project to DS Cloud in a few simple steps, as shown below:
 
 <Steps>
   <Step title="First, read the instructions for your language.">
-    <SnippetIntro />
+    <Snippet file="languages.mdx" />
     <Info>For this example, we will use the JavaScript (Node.js) language.</Info>
   </Step>
   <Step title="Create your DS Cloud config file.">
-    After accessing the dashboard, create a configuration file. You can learn how to create a [configuration file](/getting-started/config-file) by reading this article [here](/getting-started/config-file).
+    Create a configuration file for your project. You can learn how to create a [configuration file](/getting-started/config-file) by reading this article [here](/getting-started/config-file).
  
     ```systemd Example of a config file for a bot
     MAIN=index.js
