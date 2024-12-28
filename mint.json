@@ -23,6 +23,10 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "DataBase (BETA)",
+      "url": "database-reference"
     }
   ],
   "anchors": [
