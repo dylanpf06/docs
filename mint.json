@@ -124,7 +124,7 @@
       ]
     },
     {
-      "group": "DataBase (BETA)",
+      "group": "DataBase Reference",
       "pages": [
         "database-reference/introduction",
         "database-reference/restrictions"
