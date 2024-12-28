@@ -122,6 +122,13 @@
           ]
         }
       ]
+    },
+    {
+      "group": "DataBase (BETA)",
+      "pages": [
+        "database-reference/introduction",
+        "database-reference/restrictions"
+      ]
     }
   ],
   "api": {
