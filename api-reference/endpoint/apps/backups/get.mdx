@@ -6,9 +6,9 @@ api: "GET https://api.dscloud.pt/v1/apps/{app_id}/backups"
 authMethod: "none"
 ---
 
-<Warning>**Exclusive route for [Pro](https://dscloud.com/en/pay?plan=pro), [Business](https://dscloud.com/en/pay?plan=business), and [Enterprise](https://dscloud.com/en/pay?plan=enterprise) clients.**</Warning>
+<Warning>**Exclusive route for [Pro](https://dscloud.pt/en/pay?plan=pro), [Business](https://dscloud.pt/en/pay?plan=business), and [Enterprise](https://dscloud.pt/en/pay?plan=enterprise) clients.**</Warning>
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
-  The API key for your account. You can find this in your [account settings](https://dscloud.com/dashboard/settings).
+  The API key for your account. You can find this in your [account settings](https://dscloud.pt/dashboard/settings).
 </ParamField>
 <ParamField path="app_id" type="string" placeholder="Application ID" required>
   The ID of the application. You can find this in the URL of your application's dashboard.
@@ -58,4 +58,4 @@ The contents of the response.
 }
 ```
 </ResponseExample>
-<Note>The format of the URL to download the desired backup is: https://backups.dscloud.com/{accountID}_{name}.zip?{key}</Note>
+<Note>The format of the URL to download the desired backup is: https://backups.dscloud.pt/{accountID}_{name}.zip?{key}</Note>

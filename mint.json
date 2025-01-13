@@ -17,7 +17,7 @@
   },
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.dscloud.com"
+    "url": "https://dashboard.dscloud.pt"
   },
   "tabs": [
     {
@@ -151,7 +151,7 @@
     "suggestEdit": true
   },
   "footerSocials": {
-    "website": "https://dscloud.com",
+    "website": "https://dscloud.pt",
     "discord": "https://discord.gg/7cMBjMfWCm",
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",
