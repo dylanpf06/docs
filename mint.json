@@ -27,6 +27,10 @@
     {
       "name": "DataBase (BETA)",
       "url": "database-reference"
+    },
+    {
+      "name": "SDK javascript (BETA)",
+      "url": "sdkjs-reference"
     }
   ],
   "anchors": [
@@ -133,8 +137,8 @@
     {
       "group": "SDK Reference",
       "pages": [
-        "sdk-reference/introduction",
-        "sdk-reference/restrictions"
+        "sdkjs-reference/introduction",
+        "sdkjs-reference/restrictions"
       ]
     }
   ],
