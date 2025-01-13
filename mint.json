@@ -129,6 +129,13 @@
         "database-reference/introduction",
         "database-reference/restrictions"
       ]
+    },
+    {
+      "group": "SDK Reference",
+      "pages": [
+        "sdk-reference/introduction",
+        "sdk-reference/restrictions"
+      ]
     }
   ],
   "api": {
