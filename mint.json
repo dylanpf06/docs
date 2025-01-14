@@ -139,6 +139,12 @@
       "pages": [
         "sdkjs-reference/introduction"
       ]
+    },
+    {
+      "group": "JavaScript SDK",
+      "pages": [
+        "sdks/js/client"
+      ]
     }
   ],
   "api": {
