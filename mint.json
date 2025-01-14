@@ -144,7 +144,7 @@
       "group": "JavaScript SDK",
       "pages": [
         "sdkjs-reference/client",
-        "sdkjs-reference/managing_application"
+        "sdkjs-reference/manager_application"
       ]
     }
   ],
