@@ -143,7 +143,8 @@
     {
       "group": "JavaScript SDK",
       "pages": [
-        "sdkjs-reference/client"
+        "sdkjs-reference/client",
+        "sdkjs-reference/managing_application"
       ]
     }
   ],
