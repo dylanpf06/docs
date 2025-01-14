@@ -137,8 +137,7 @@
     {
       "group": "SDK Reference",
       "pages": [
-        "sdkjs-reference/introduction",
-        "sdkjs-reference/restrictions"
+        "sdkjs-reference/introduction"
       ]
     }
   ],
