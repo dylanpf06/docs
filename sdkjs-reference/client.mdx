@@ -13,36 +13,35 @@ npm i @dscloud/sdkapi
 
 ## Usage
 
-<Tabs> 
-    <Tab title="JavaScript">
-    
+<Tabs>
+  <Tab title="JavaScript">
     ```javascript
     const { DsCloudAPIKEY } = require("@dscloud/sdkapi");
 
     // Instantiate the API client
     const api = new DsCloudAPIKEY("Your API Key");
     ```
-    
-    </Tab>
-    <Tab title="TypeScript">
-    
+  </Tab>
+
+  <Tab title="TypeScript">
     ```typescript
     import { DsCloudAPIKEY } from "@dscloud/sdkapi";
 
     // Instantiate the API client
     const api = new DsCloudAPIKEY("Your API Key");
     ```
-    
-    </Tab>
+  </Tab>
 </Tabs>
 
 ## Parameters
 
 ### API Key
 
-- **Type:** `string`  
-- **Required:** Yes  
-- **Description:** A valid API key is required for authentication and must be provided as a string.
+* **Type:** `string`
+
+* **Required:** Yes
+
+* **Description:** A valid API key is required for authentication and must be provided as a string.
 
 ## Getting Started
 
@@ -51,10 +50,10 @@ Using the `DSCloudSDK`, you can retrieve details about the user associated with 
 ### Example
 
 ```javascript
-    const user = await api.getUser();
-    const application = api.getApplication("Application ID");
+const user = await api.getUser();
+const application = api.getApplication("Application ID");
 
-    console.log(user.applications); // List of applications
+console.log(user.applications); // List of applications
 ```
 
 ## Application Management
@@ -69,4 +68,4 @@ const application = api.getApplications("Application ID");
 console.log(application); // List of applications
 ```
 
----
+***
