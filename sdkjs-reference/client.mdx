@@ -1,6 +1,6 @@
 ---
 title: "Client"
-description: "The DSCloudAPI object is the main interface for interacting with the DSCloud service. Instantiated with an API key, it provides access to various aspects of the service."
+description: "The DSCloudAPI is the main interface for interacting with the DSCloud service. Instantiated with an API key, it provides access to various aspects of the service."
 ---
 
 ## Installation
@@ -46,17 +46,15 @@ npm i @dscloud/sdkapi
 
 ## Getting Started
 
-Using the `DSCloudAPI` object, you can retrieve details about the user associated with the API key, as well as a list of applications linked to that user.
+Using the `DSCloudSDK`, you can retrieve details about the user associated with the API key, as well as a list of applications linked to that user.
 
 ### Example
 
 ```javascript
-(async () => {
     const user = await api.getUser();
     const application = api.getApplication("Application ID");
 
     console.log(user.applications); // List of applications
-})();
 ```
 
 ## Application Management
@@ -66,9 +64,9 @@ With the `DSCloudAPI` client, you can access and manage your applications easily
 ### Listing All Applications
 
 ```javascript
-    const application = api.getApplications("Application ID");
+const application = api.getApplications("Application ID");
 
-    console.log(application); // List of applications
+console.log(application); // List of applications
 ```
 
 ---
