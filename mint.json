@@ -144,6 +144,7 @@
       "group": "JavaScript SDK",
       "pages": [
         "sdkjs-reference/client",
+        "sdkjs-reference/commit_and_upload",
         "sdkjs-reference/manager_application"
       ]
     }
