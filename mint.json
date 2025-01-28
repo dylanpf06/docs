@@ -83,7 +83,7 @@
         "languages/getting-started-with-java"
       ]
     },
-       {
+    {
       "group": "Terms",
       "pages": [
         "terms/PrivacyPolicy",
@@ -144,6 +144,12 @@
       "pages": [
         "database-reference/introduction",
         "database-reference/restrictions"
+      ]
+    },
+    {
+      "group": "DB Endpoints",
+      "pages": [
+        "database-reference/endpoint/db/create"
       ]
     },
     {
