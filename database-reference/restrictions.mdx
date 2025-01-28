@@ -1,0 +1,77 @@
+---
+title: "Limitations and Restrictions"
+icon: "shield" 
+description: "Understand the limitations and restrictions of the Ds Cloud Database API."
+---
+
+The use of the **Ds Cloud Database API** is subject to various regulations, security measures, and system policies to ensure fair access and compliance. This document outlines key restrictions, blocked regions, and API rate limits.
+
+## Blocked Countries
+
+Due to regulatory requirements, local laws, and privacy concerns, access to our services and APIs is restricted in certain regions. We are working to expand availability but cannot guarantee service in these areas.
+
+### Current List of Blocked Countries
+
+| Country     | Code | Reason                  |
+| :---------- | :--- | :---------------------- |
+| TOR (All)   | TOR  | Regulatory restrictions |
+| Belarus     | BY   | Regulatory restrictions |
+| China       | CN   | Regulatory restrictions |
+| Cuba        | CU   | Regulatory restrictions |
+| Hong Kong   | HK   | Regulatory restrictions |
+| Iran        | IR   | Regulatory restrictions |
+| North Korea | KP   | Regulatory restrictions |
+| Russia      | RU   | Regulatory restrictions |
+| Syria       | SY   | Regulatory restrictions |
+| Afghanistan | AF   | Regulatory restrictions |
+
+## Captcha Requirements
+
+To mitigate security risks, users from certain countries must solve a CAPTCHA before accessing our services or APIs.
+
+### Countries Requiring CAPTCHA
+
+| Country     | Code | Reason           |
+| :---------- | :--- | :--------------- |
+| Bangladesh  | BD   | Security reasons |
+| India       | IN   | Security reasons |
+| Iraq        | IQ   | Security reasons |
+| Philippines | PH   | Security reasons |
+| Ukraine     | UA   | Security reasons |
+| Venezuela   | VE   | Security reasons |
+| Vietnam     | VN   | Security reasons |
+| Indonesia   | ID   | Security reasons |
+| Malaysia    | MY   | Security reasons |
+
+## Database API Usage Limits
+
+To ensure fair usage and system stability, the Ds Cloud Database API enforces rate limits. Violations, such as abusive usage, may result in account suspension.
+
+### Key Points
+
+* **Abuse Policy**: Illegal or abusive use of the API can lead to account suspension.
+
+* **Rate Limits**: If you exceed the limit, you'll receive a `429 Too Many Requests` response. Wait **30 minutes** before retrying.
+
+* **External Applications**: Apps hosted **outside of Ds Cloud** are limited to **300 requests per minute**.
+
+### Current Rate Limits by Plan
+
+| Account Plan    | Rate Limit (60s) | Max Daily Requests |
+| :-------------- | :--------------: | :----------------: |
+| Bronze          |    60 requests   |   86,400 requests  |
+| Silver          |    90 requests   |  129,800 requests  |
+| Titanium        |   150 requests   |  216,600 requests  |
+| Essential       |   200 requests   |  288,000 requests  |
+| Advanced        |   250 requests   |  360,000 requests  |
+| Ultimate        |   300 requests   |  432,000 requests  |
+
+## Best Practices
+
+1. **Monitor Usage**: Regularly check your API usage to ensure compliance with limits.
+
+2. **Optimize Requests**: Minimize redundant calls to stay within your plan's limits.
+
+3. **Upgrade Plans**: If your application requires higher limits, consider upgrading to a plan that meets your needs.
+
+By following these guidelines and understanding the restrictions, you can effectively and securely use the Ds Cloud Database API. For more information or to discuss custom plans, contact our support team.
