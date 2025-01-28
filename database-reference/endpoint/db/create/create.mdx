@@ -1,0 +1,93 @@
+---
+title: "Create a new database"
+sidebarTitle: "/v1/db/create"
+api: "POST https://api.dscloud.pt/v1/db/create"
+authMethod: "authorization"
+description: "Create a new database for your applications."
+---
+
+<ParamField header="Authorization" type="string" placeholder="API KEY" required>
+  The API key for your account. You can find this in your [account settings](https://dscloud.pt/dashboard/settings).
+</ParamField>
+
+<ParamField name="name" type="string" placeholder="Database Name" required>
+  The name of the database you want to create.
+</ParamField>
+
+<ParamField name="type" type="string" placeholder="mysql/mongodb" required>
+  The type of database to create. Supported types are `mysql` and `mongodb`.
+</ParamField>
+
+<ParamField name="ip" type="string" placeholder="Database IP" readonly>
+  The IP address assigned to the database.
+</ParamField>
+
+<ParamField name="user" type="string" placeholder="Database Username" readonly>
+  The username to access the database.
+</ParamField>
+
+<ParamField name="password" type="string" placeholder="Database Password" readonly>
+  The password to access the database.
+</ParamField>
+
+<ParamField name="created_at" type="string" placeholder="Timestamp" readonly>
+  The timestamp of when the database was created.
+</ParamField>
+
+### Response
+
+<ResponseField name="status" type="string">
+  Indicates whether the call was successful. `success` if successful, `error` if not.
+</ResponseField>
+
+<ResponseField name="response" type="object">
+  The contents of the response.
+
+  <Expandable title="Database Details">
+    <ResponseField name="id" type="string">
+      The ID of the created database.
+    </ResponseField>
+
+    <ResponseField name="name" type="string">
+      The name of the database.
+    </ResponseField>
+
+    <ResponseField name="ip" type="string">
+      The IP address assigned to the database.
+    </ResponseField>
+
+    <ResponseField name="user" type="string">
+      The username to access the database.
+    </ResponseField>
+
+    <ResponseField name="password" type="string">
+      The password to access the database.
+    </ResponseField>
+
+    <ResponseField name="type" type="string">
+      The type of the database (e.g., `mysql`, `mongodb`).
+    </ResponseField>
+
+    <ResponseField name="created_at" type="string">
+      The timestamp of when the database was created.
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseExample>
+  ```json Response
+  {
+    "status": "success",
+    "response": {
+        "id": "003dd41a",
+        "name": "example_database",
+        "ip": "eu-01.db.dscloud.pt",
+        "user": "userdb",
+        "password": "1OS]a+y2v9GK),hL",
+        "type": "mysql",
+        "created_at": "2025-01-28T12:00:00Z"
+    }
+  }
+
+  ```
+</ResponseExample>
