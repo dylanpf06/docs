@@ -79,6 +79,12 @@
         "languages/getting-started-with-java"
       ]
     },
+       {
+      "group": "Agency",
+      "pages": [
+        "agency/PrivacyPolicy"
+      ]
+    },
     {
       "group": "API Reference",
       "pages": [
