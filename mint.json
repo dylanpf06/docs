@@ -31,6 +31,10 @@
     {
       "name": "SDK javascript (BETA)",
       "url": "sdkjs-reference"
+    },
+    {
+      "name": "Terms",
+      "url": "terms"
     }
   ],
   "anchors": [
