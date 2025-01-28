@@ -147,11 +147,9 @@
       ]
     },
     {
-      "group": "API Endpoints",
+      "group": "DB Endpoints",
       "pages": [
-        "api-reference/endpoint/users/me",
-        "api-reference/endpoint/apps/upload",
-        "api-reference/endpoint/apps/status-all"
+        "database-reference/endpoint/db/create"
       ]
     },
     {
