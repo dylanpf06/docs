@@ -83,7 +83,7 @@
         "languages/getting-started-with-java"
       ]
     },
-       {
+    {
       "group": "Terms",
       "pages": [
         "terms/PrivacyPolicy",
@@ -144,6 +144,14 @@
       "pages": [
         "database-reference/introduction",
         "database-reference/restrictions"
+      ]
+    },
+    {
+      "group": "API Endpoints",
+      "pages": [
+        "api-reference/endpoint/users/me",
+        "api-reference/endpoint/apps/upload",
+        "api-reference/endpoint/apps/status-all"
       ]
     },
     {
