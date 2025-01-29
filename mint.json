@@ -153,7 +153,7 @@
         {
           "group": "Managing",
           "pages": [
-            "database-reference/endpoint/db/managing/list"
+            "database-reference/endpoint/db/managing/list",
             "database-reference/endpoint/db/managing/RotatePassword"
           ]
         }
