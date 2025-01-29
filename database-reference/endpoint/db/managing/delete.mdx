@@ -1,0 +1,48 @@
+---
+title: "Delete Database"
+sidebarTitle: "/v1/db/delete"
+api: "DELETE https://api.dscloud.pt/v1/db/delete/{id}"
+authMethod: "authorization"
+description: "Permanently delete a specific database. This action is irreversible and will immediately terminate all connections."
+---
+
+<ParamField header="Authorization" type="string" placeholder="API KEY" required>
+  The API key for your account. You can find this in your [account settings](https://dscloud.pt/dashboard/settings).
+</ParamField>
+
+<ParamField name="id" type="string" urlParam required>
+  The unique identifier of the database to be deleted.
+</ParamField>
+
+### Response
+
+<ResponseField name="status" type="string">
+  Indicates whether the call was successful. `success` if successful, `error` if not.
+</ResponseField>
+
+<ResponseField name="response" type="array">
+  Confirmation of the deletion operation.
+
+  <Expandable title="response Details">
+    <ResponseField name="id" type="string">
+      The ID of the database that was deleted.
+    </ResponseField>
+
+    <ResponseField name="deleted_at" type="string">
+      Timestamp of the deletion operation.
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseExample>
+  ```json Response
+  {
+    "status": "success",
+    "response": {
+      "id": "003dd41a",
+      "deleted_at": "2025-01-28T15:30:00Z"
+    }
+  }
+  ```
+  </ResponseExample>
+  <Warning> **Danger Zone** - This action permanently removes all database data and cannot be undone. Ensure you have proper backups before proceeding. </Warning>
