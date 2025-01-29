@@ -7,15 +7,15 @@ description: "Learn how to get started on DS Cloud with Python"
 ## 🚀 Introduction
 
 - Before you begin, make sure you have Python installed on your system. If not, download it from the [official Python website](https://www.python.org/).
-- Create an account on DS Cloud via the [login page](https://dscloud.app/login) using your email, Discord, or both.
-- Ensure you have an active paid plan. View and purchase plans [here](https://dscloud.app/plans).
+- Create an account on DS Cloud via the [login page](https://dscloud.pt/login) using your email, Discord, or both.
+- Ensure you have an active paid plan. View and purchase plans [here](https://dscloud.pt/plans).
 
 ## ⚙️ Creating the DS Cloud Config File
 
 <Card
 title="Learn how to create the configuration file for DS Cloud."
 icon="link"
-href="https://docs.dscloud.app/getting-started/config-file"
+href="https://docs.dscloud.app/getstarted/configfile"
 >
   The `dscloud.app` file configures your application, defining its name, description, version, main file, and more.
 </Card>
@@ -24,11 +24,11 @@ href="https://docs.dscloud.app/getting-started/config-file"
 
 - `main.py` (main application file).
 - [requirements.txt](./how-to-create-your-requirements) (dependency file).
-- [dscloud.app](/getting-started/config-file) (DS Cloud configuration file).
+- [dscloud.app](/getstarted/configfile) (DS Cloud configuration file).
 
 ## ▶️ Start Application
 
-- If the `START` field is not defined in the configuration file, DS Cloud will run `python MAIN`, where `MAIN` is the file specified in the `MAIN` field of the configuration file. If the `START` field is defined, its value will be executed directly. Learn more about configuration file parameters [here](https://docs.dscloud.app/getting-started/config-file#configuration-parameters).
+- If the `START` field is not defined in the configuration file, DS Cloud will run `python MAIN`, where `MAIN` is the file specified in the `MAIN` field of the configuration file. If the `START` field is defined, its value will be executed directly. Learn more about configuration file parameters [here](https://docs.dscloud.app/getstarted/configfile#configuration-parameters).
 - DS Cloud uses `pip install` to install all dependencies listed in the `requirements.txt`.
 
 ## 🖥️ Preparing Your Python Project
@@ -41,7 +41,7 @@ When preparing your Python project for deployment on DS Cloud, ensure your proje
 
 ### 📁 Essential Configuration Files
 
-- [dscloud.app/.config](/getting-started/config-file)
+- [dscloud.app/.config](/getstarted/configfile)
 - Main application file (`main.py`)
 - Dependency file (`requirements.txt` or `pyproject.toml`)
 

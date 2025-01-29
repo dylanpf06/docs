@@ -46,7 +46,7 @@ icon: "robot"
   <Card title="Automatic Deployment via Git" icon="code">
     **DSCloud** offers the ability to manage automatic deployments of your application, with support for integration with GitHub and GitLab via Webhooks. This functionality simplifies the process of updating the bot, allowing developers to focus on programming while **DSCloud** handles the deployment process.
 
-    Details on the configuration are available [here](https://docs.dscloud.app/tutorials/how-to-set-up-git-integration). After following the steps correctly, simply commit to your repository to update your application on **DSCloud**. Recent deployments can be viewed in the Deploy tab of the dashboard. If you have any questions, feel free to [contact us](https://dscloud.app/dashboard/support).
+    Details on the configuration are available [here](https://docs.dscloud.app/tutorials/how-to-set-up-git-integration). After following the steps correctly, simply commit to your repository to update your application on **DSCloud**. Recent deployments can be viewed in the Deploy tab of the dashboard. If you have any questions, feel free to [contact us](https://dscloud.pt/support).
   </Card>
 
   <Card title="Premium Routes" icon="star">
@@ -84,13 +84,13 @@ DSCloud caters to a diverse range of programming languages, empowering developer
   <Step title="Configuration File" icon="file">
     The first step to host your bot on **DSCloud** is to create a detailed configuration file. This file is not just a simple text document but a comprehensive guide that defines the settings for the application on **DSCloud**. It functions as an architectural plan for your project on the platform.
 
-    Once the plan is acquired, you need to create this file, detailing each configuration and filling it out correctly. Details on how to create this file are available [here](/getting-started/config-file), with a step-by-step guide.
+    Once the plan is acquired, you need to create this file, detailing each configuration and filling it out correctly. Details on how to create this file are available [here](/getstarted/configfile), with a step-by-step guide.
   </Step>
 
   <Step title="ZIP File Creation" icon="file-zip">
     With the configuration file ready, the next step is to prepare your application for upload. This involves placing the application files and the **DSCloud** configuration file inside a .zip file.
 
-    However, not all files need to be included in this .zip. Files such as `node_modules`, `package-lock.json`, `pyproject.toml`, and `poetry.lock` are not necessary, as they can be generated automatically on the server side. A list of files that do not need to be uploaded is available [here](/faqs/automatic-deletion-files-when-deploying-an-application-to-dscloud), helping ensure that only necessary files are in the .zip, making the upload process faster and smoother.
+    However, not all files need to be included in this .zip. Files such as `node_modules`, `package-lock.json`, `pyproject.toml`, and `poetry.lock` are not necessary, as they can be generated automatically on the server side. A list of files that do not need to be uploaded is available [here](/services/bot), helping ensure that only necessary files are in the .zip, making the upload process faster and smoother.
   </Step>
 
   <Step title="Dependencies File" icon="box">
@@ -106,25 +106,31 @@ DSCloud caters to a diverse range of programming languages, empowering developer
   </Step>
 
   <Step title="Common Errors During Application Deployment" icon="x">
-    <Warning>Even with careful preparation, some errors may occur during the application deployment process. Below are some common errors and how to resolve them. If you encounter an error not listed here, feel free to [contact our team](https://dscloud.app/dashboard/support). We are always ready to help troubleshoot and resolve any issues that may arise during the deployment process. Remember, the goal is to successfully host your bot on **DSCloud**, and we are here to help you achieve that.</Warning>
+    <Warning>Even with careful preparation, some errors may occur during the application deployment process. Below are some common errors and how to resolve them. If you encounter an error not listed here, feel free to [contact our team](https://dscloud.pt/support). We are always ready to help troubleshoot and resolve any issues that may arise during the deployment process. Remember, the goal is to successfully host your bot on **DSCloud**, and we are here to help you achieve that.</Warning>
 
-    <AccordionGroup>
-      <Accordion title="INVALID_DEPENDENCY" icon="box">
-        This error occurs when the dependency file is missing in your .zip. If your application is in JS, we have an article guiding you in the step-by-step creation of the `package.json` [here](https://docs.dscloud.app/articles/how-to-create-your-package-json), and for Python, it's the `requirements.txt` [here](/articles/how-to-create-your-requirements).
-      </Accordion>
-
-      <Accordion title="FEW_MEMORY" icon="memory">
-        This error occurs when you incorrectly configure the RAM in the configuration file or provide more RAM than is available, or less than the minimum required for the type of application, which is 256MB for bots.
-      </Accordion>
-
-      <Accordion title="INVALID_MAIN" icon="file-code">
-        This error occurs when the file defined as "main" for your application in the configuration file does not exist, is written incorrectly, or the path is incorrect. If your main file is inside a folder, for example, you should enter `folder/file.js`.
-      </Accordion>
-
-      <Accordion title="MISSING_BUILD_FILE" icon="file">
-        This error occurs when a build file is missing. Certain applications, such as **VueJS** or **React**, require this file to compile and execute.
-      </Accordion>
-    </AccordionGroup>
+<AccordionGroup>
+  <Accordion title="INVALID_DEPENDENCY" icon="box">
+    This error occurs when the dependency file is missing in your `.zip` file. For JavaScript applications, refer to our guide on creating the `package.json` file [here](/languages/javascript/configuring-package-json). For Python applications, follow the steps to create the `requirements.txt` file [here](/languages/python/how-to-create-your-requirements).
+  </Accordion>
+  <Accordion title="FEW_MEMORY" icon="memory">
+    This error happens when the RAM allocation in your configuration file is either incorrectly set, exceeds the available limit, or is below the minimum requirement. For bots, the minimum required RAM is **256MB**.
+  </Accordion>
+  <Accordion title="INVALID_MAIN" icon="file-code">
+    This error occurs when the file specified as the "main" entry point in your configuration file is missing, incorrectly named, or has an invalid path. If your main file is inside a folder, ensure the path is correctly specified, e.g., `folder/file.js`.
+  </Accordion>
+  <Accordion title="MISSING_CONFIG" icon="file-signature">
+    This error indicates that the configuration file is either missing from your `.zip`, not located in the root directory, or has an invalid format. Ensure the configuration file is in `.app` or `.config` format. Additionally, verify that there are no duplicate file extensions by enabling file extension visibility on your computer.
+  </Accordion>
+  <Accordion title="MISSING_MEMORY" icon="memory">
+    This error occurs when the **MEMORY** field is missing from your configuration file. This field defines the total amount of RAM allocated to your application.
+  </Accordion>
+  <Accordion title="INVALID_DISPLAY_NAME" icon="file">
+    This error occurs when the **DISPLAY_NAME** field is missing or exceeds the 32-character limit. Ensure your application's display name is defined and within the allowed character limit.
+  </Accordion>
+  <Accordion title="FAILED_UPLOAD" icon="x">
+    This error is typically caused by issues with the `.zip` file. Ensure the `.zip` file is properly created and not password-protected. If the file is password-protected, remove the password and try again. If the file is not password-protected but the error persists, the file may be corrupted. In this case, create a new `.zip` file and attempt the upload again.
+  </Accordion>
+</AccordionGroup>
   </Step>
 </Steps>
 
