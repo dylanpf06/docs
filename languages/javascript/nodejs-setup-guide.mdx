@@ -7,7 +7,7 @@ description: "Learn how to get started on DS Cloud with Node.js"
 ## 🚀 Introduction
 
 - Ensure Node.js and npm are installed on your system. If not, download them from the [official Node.js website](https://nodejs.org/).
-- Create an account on DS Cloud via the [login page](https://dscloud.pt/login.html) using your email, Discord, or both.
+- Create an account on DS Cloud via the [login page](https://dscloud.pt/login.html.html) using your email, Discord, or both.
 - Make sure you have an active paid plan. View and purchase plans [here](https://dscloud.pt/planos.html).
 
 ## ⚙️ Creating the dscloud config file
@@ -17,7 +17,7 @@ title="Learn about: how to make the configuration file for DS Cloud."
 icon="link"
 href="/getstarted/configfile"
 >
-  The `dscloud.app` file configures your application, defining its name, description, version, main file, and more.
+  The `dscloud.pt` file configures your application, defining its name, description, version, main file, and more.
 </Card>
 
 ## ▶️ Start Application
@@ -37,10 +37,10 @@ href="/getstarted/configfile"
 
 ### 📁 Essential Configuration Files
 
-To deploy your Node.js project on DS Cloud, include your configuration file (`dscloud.app/.config`) and essential application files in a zip file.
+To deploy your Node.js project on DS Cloud, include your configuration file (`dscloud.pt/.config`) and essential application files in a zip file.
 
 <Warning>
-  The configuration file (`dscloud.app/.config`) must be in the root of the zip file; otherwise, DS Cloud won't find it during deployment.
+  The configuration file (`dscloud.pt/.config`) must be in the root of the zip file; otherwise, DS Cloud won't find it during deployment.
 </Warning>
 
 #### 🗑️ Files to Exclude Before Uploading
@@ -58,7 +58,7 @@ To deploy your Node.js project on DS Cloud, include your configuration file (`ds
 
 Three files are essential for hosting your Node project:
 
-- [dscloud.app/.config](/getstarted/configfile)
+- [dscloud.pt/.config](/getstarted/configfile)
 - Main file (`mainFile.js` or `mainFile.ts`)
 - [package.json](/languages/javascript/configuring-package-json) (dependency file)
 
@@ -80,7 +80,7 @@ iconType="solid"
     Minimum RAM requirements:
     - Bots: 256MB
     - Websites/APIs: 512MB
-    Depending on application size and complexity, allocate more RAM to avoid the [LACK_OF_RAM](https://docs.dscloud.app/faqs/troubleshooting/LACK_OF_RAM) error.
+    Depending on application size and complexity, allocate more RAM to avoid the [LACK_OF_RAM](https://docs.dscloud.pt/faqs/troubleshooting/LACK_OF_RAM) error.
   </Accordion>
 </AccordionGroup>
 
