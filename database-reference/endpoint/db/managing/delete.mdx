@@ -6,6 +6,8 @@ authMethod: "authorization"
 description: "Permanently delete a specific database. This action is irreversible and will immediately terminate all connections."
 ---
 
+<Warning> **Danger Zone** - This action permanently removes all database data and cannot be undone. Ensure you have proper backups before proceeding. </Warning>
+
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
   The API key for your account. You can find this in your [account settings](https://dscloud.pt/dashboard/settings).
 </ParamField>
@@ -45,4 +47,3 @@ description: "Permanently delete a specific database. This action is irreversibl
   }
   ```
   </ResponseExample>
-  <Warning> **Danger Zone** - This action permanently removes all database data and cannot be undone. Ensure you have proper backups before proceeding. </Warning>
