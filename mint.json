@@ -91,6 +91,12 @@
       ]
     },
     {
+      "group": "Corporation",
+      "pages": [
+        "corporation/Identity"
+      ]
+    },
+    {
       "group": "Terms",
       "pages": [
         "terms/PrivacyPolicy",
