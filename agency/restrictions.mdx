@@ -1,0 +1,37 @@
+---
+title: "Limits and Restrictions"
+description: "Understand the resource constraints and operational limits of the DSCloud platform."
+icon: "shield-dog"
+---
+
+## Minimum Resource Requirements
+
+To ensure optimal performance and stability, all projects hosted on **DSCloud** must meet certain minimum resource requirements:
+
+* **Bots:** Requires at least **256MB** of RAM to run efficiently.
+
+* **Websites:** A minimum of **512MB** of RAM is needed for smooth operation.
+
+Our platform offers plans with up to **1TB of RAM**, but the **maximum allocation per individual application is 32GB**.
+<ins>If you need more than 32GB, please contact our support team.</ins>
+
+## Storage Limitations
+
+To maintain fair usage across all users, storage is allocated as follows:
+
+* **All projects:** Each project comes with a default allocation of **10GB** of storage.
+
+## Service Limits
+
+To ensure system stability and prevent resource abuse, **DSCloud** applies specific service limitations:
+
+### LACK\_OF\_RAM
+
+If an application exceeds its allocated RAM limit, as defined in its [dscloud.app config file](../getting-started/config-file), it will be flagged for **LACK\_OF\_RAM** and automatically shut down to prevent system overload.
+
+### LACK\_OF\_CPU
+
+If an application consumes excessive CPU beyond its assigned limit, it will be flagged for **LACK\_OF\_CPU** and terminated to maintain a fair distribution of resources.
+Additionally, **DSCloud strictly prohibits the hosting of applications related to cryptocurrency mining**.
+
+At **DSCloud**, we are committed to maintaining a balanced and secure cloud environment, ensuring fair access to resources for all users.
