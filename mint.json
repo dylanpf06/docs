@@ -84,6 +84,12 @@
       ]
     },
     {
+      "group": "Agency",
+      "pages": [
+        "agency/overview"
+      ]
+    },
+    {
       "group": "Terms",
       "pages": [
         "terms/PrivacyPolicy",
