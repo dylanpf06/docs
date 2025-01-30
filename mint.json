@@ -42,6 +42,16 @@
       "name": "Join our Discord",
       "icon": "discord",
       "url": "https://discord.gg/7cMBjMfWCm"
+    },
+    {
+      "name": "Visit our website",
+      "icon": "globe",
+      "url": "https://dscloud.pt"
+    },
+    {
+      "name": "Contribute on GitHub",
+      "icon": "github",
+      "url": "https://go.squarecloud.app/github"
     }
   ],
   "navigation": [
