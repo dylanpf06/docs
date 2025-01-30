@@ -86,7 +86,8 @@
     {
       "group": "Agency",
       "pages": [
-        "agency/overview"
+        "agency/overview",
+        "agency/restrictions"
       ]
     },
     {
