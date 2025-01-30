@@ -93,7 +93,8 @@
     {
       "group": "Corporation",
       "pages": [
-        "corporation/Identity"
+        "corporation/Identity",
+        "corporation/LegalDocuments"
       ]
     },
     {
