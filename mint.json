@@ -94,7 +94,8 @@
       "group": "Corporation",
       "pages": [
         "corporation/Identity",
-        "corporation/LegalDocuments"
+        "corporation/LegalDocuments",
+        "corporation/support"
       ]
     },
     {
