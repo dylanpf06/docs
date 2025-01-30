@@ -4,47 +4,47 @@ sidebarTitle: "Create Your requirements.txt"
 description: "Learn how to create a requirements.txt file for Python projects"
 ---
 
-# Creating Your requirements.txt File
+# Creating Your `requirements.txt` File
 
-A `requirements.txt` file is a standardized way to specify the dependencies of your Python project. This file lists all external packages your project relies on, ensuring consistency and reproducibility for your development environment. Here's how you can create and manage your `requirements.txt` file effectively.
+The `requirements.txt` file is a standard way to define dependencies for your Python project. It ensures consistency across development environments by listing all external packages your project relies on. Follow these steps to create and manage it effectively.
 
 ## Step 1: Activate a Virtual Environment (Recommended)
 
-Before creating the `requirements.txt` file, it is highly recommended to work within a virtual environment. Virtual environments help isolate your project dependencies from your global Python environment, preventing conflicts.
+Using a virtual environment helps isolate your project dependencies, preventing conflicts with global packages.
 
 ### Activating a Virtual Environment
 
-* **Windows**:```bash
+- **Windows**:
+  ```bash
   python -m venv venv
   .\venv\Scripts\activate
   ```
 
-* **Linux/macOS**:```bash
+- **Linux/macOS**:
+  ```bash
   python3 -m venv venv
   source venv/bin/activate
   ```
 
 ## Step 2: List Dependencies
 
-Manually list the packages your project depends on in the `requirements.txt` file. You can use the `pip freeze` command to generate this file automatically.
+You can manually list your required packages in `requirements.txt`, but the easiest way is to generate it using `pip freeze`.
 
-### Automatically Generate requirements.txt
+### Automatically Generate `requirements.txt`
 
-After installing your dependencies in the virtual environment, run:
+Once you've installed your dependencies inside the virtual environment, run:
 
 ```bash
 pip freeze > requirements.txt
 ```
 
-This will create a `requirements.txt` file with all installed packages.
+This will create a `requirements.txt` file with all installed packages and their versions.
 
 ### Best Practices
 
-<Warning>
-  Always list only the required packages for your project (e.g., `discord.py`) to ensure consistency and avoid unnecessary dependencies in production.
-</Warning>
+> **Warning:** Only include necessary dependencies (e.g., `discord.py`) to avoid unnecessary bloat in production.
 
-### Example requirements.txt File
+### Example `requirements.txt` File
 
 ```plaintext
 flask
@@ -54,15 +54,15 @@ discord.py
 
 ## Step 3: Review and Edit
 
-Open the `requirements.txt` file in a text editor to ensure it only contains the packages your project requires. Remove any unnecessary dependencies as needed.
+Open `requirements.txt` in a text editor and remove any unnecessary dependencies to keep your project clean.
 
 ## Step 4: Use and Share
 
-Share the `requirements.txt` file with collaborators or use it to set up your project environment on different machines.
+Distribute `requirements.txt` to collaborators or use it to set up your project on another system.
 
-### Install Dependencies from requirements.txt
+### Install Dependencies from `requirements.txt`
 
-To recreate your environment on a new machine:
+To recreate the environment on a new machine, run:
 
 ```bash
 pip install -r requirements.txt
@@ -70,10 +70,8 @@ pip install -r requirements.txt
 
 ## Bonus Tips
 
-* **Regular Updates**: Update the `requirements.txt` file whenever you add or modify dependencies in your project.
+- **Regular Updates:** Update `requirements.txt` whenever dependencies change.
+- **Avoid Global Environments:** Always run `pip freeze` inside a virtual environment to avoid including unrelated packages.
+- **Compatibility with DS Cloud:** If using `pyproject.toml` or `Pipfile`, generate a `requirements.txt` for compatibility.
 
-* **Avoid Global Environments**: Using `pip freeze` in the global environment may include unrelated packages. Always work within a virtual environment.
-
-* **Simplify Dependency Management**: If using `pyproject.toml` or `Pipfile`, you can generate a `requirements.txt` file from them for compatibility with DS Cloud.
-
-Creating a `requirements.txt` file is an essential step in managing dependencies effectively, ensuring a smooth development and deployment experience.
+A well-maintained `requirements.txt` file ensures a smooth development and deployment experience.
