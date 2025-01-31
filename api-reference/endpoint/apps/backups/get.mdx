@@ -7,9 +7,11 @@ authMethod: "none"
 ---
 
 <Warning>**Exclusive route for [Pro](https://dscloud.pt/en/pay?plan=pro), [Business](https://dscloud.pt/en/pay?plan=business), and [Enterprise](https://dscloud.pt/en/pay?plan=enterprise) clients.**</Warning>
+
 <ParamField header="Authorization" type="string" placeholder="API KEY" required>
   The API key for your account. You can find this in your [account settings](https://dscloud.pt/dashboard/settings).
 </ParamField>
+
 <ParamField path="app_id" type="string" placeholder="Application ID" required>
   The ID of the application. You can find this in the URL of your application's dashboard.
 </ParamField>
@@ -19,43 +21,61 @@ authMethod: "none"
 <ResponseField name="status" type="string">
   Indicates whether the call was successful. `success` if successful, `error` if not.
 </ResponseField>
-<ResponseField name="response" type="object">
 
-The contents of the response.
-<Expandable title="Toggle object">
-<ResponseField name="name" type="string">
-  The ID of the application from which you fetched the backups.
+<ResponseField name="response" type="object">
+  The contents of the response.
+
+  <Expandable title="Toggle object">
+    <ResponseField name="name" type="string">
+      The ID of the application from which you fetched the backups.
+    </ResponseField>
+
+    <ResponseField name="size" type="number">
+      Size of the backup in bytes.
+    </ResponseField>
+
+    <ResponseField name="modified" type="string">
+      Date of the last modification of the backup.
+    </ResponseField>
+
+    <ResponseField name="key" type="string">
+      AWS access key for the backup.
+    </ResponseField>
+  </Expandable>
 </ResponseField>
-<ResponseField name="size" type="number">
-  Size of the backup in bytes.
-</ResponseField>
-<ResponseField name="modified" type="string">
-  Date of the last modification of the backup.
-</ResponseField>
-<ResponseField name="key" type="string">
-  AWS access key for the backup.
-</ResponseField>
-</Expandable>
-</ResponseField>
+
 <ResponseExample>
-```json
-{
-  "status": "success",
-  "response": [
-    {
-      "name": "Backup at 2024-12-07 22:07:11",
-      "size": 81865653,
-      "modified": "2024-12-07T22:07:20+01:00",
-      "key": "sha1:abcdefabcdefabcdefabcdefabcdefabcdefabcdef"
-    },
-    {
-      "name": "Backup at 2024-12-07 22:45:28",
-      "size": 46478659,
-      "modified": "2024-12-07T22:45:28+01:00",
-      "key": "sha1:1234567890abcdef1234567890abcdef12345678"
-    }
-  ]
-}
-```
+  ```json
+  {
+    "status": "success",
+    "response": [
+       {
+          "name": "Backup at 2024-12-07 22:07:11",
+          "size": 81865653,
+          "modified": "2024-12-07T22:07:20+01:00",
+          "key": "sha1:85592d2b15ff867407964790224dcbb3a95ce82b",
+          "created_at": "2024-12-07T22:07:11+01:00",
+          "is_successful": true
+       },
+       {
+          "name": "Backup at 2024-12-07 22:28:26",
+          "size": 46478659,
+          "modified": "2024-12-07T22:28:26+01:00",
+          "key": "sha1:803d975bd5726c1f5771221fc59ec0f97e45fa12",
+          "created_at": "2024-12-07T22:28:48+01:00",
+          "is_successful": true
+       },
+       {
+          "name": "Backup at 2024-12-07 22:48:16",
+          "size": 81865653,
+          "modified": "2024-12-07T22:48:25+01:00",
+          "key": "sha1:85592d2b15ff867407964790224dcbb3a95ce82b",
+          "created_at": "2024-12-07T22:48:16+01:00",
+          "is_successful": true
+       }
+    ]
+  }
+  ```
 </ResponseExample>
-<Note>The format of the URL to download the desired backup is: https://backups.dscloud.pt/{accountID}_{name}.zip?{key}</Note>
+
+<Note>The format of the URL to download the desired backup is: https://backups.dscloud.pt/{accountID}\_{name}.zip?{key}</Note>
