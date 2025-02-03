@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Ds Cloud",
   "logo": {
-    "dark": "/logo/NEW_DS_CLOUD.png",
-    "light": "/logo/NEW_DS_CLOUD.png"
+    "dark": "/logo/favicon.png",
+    "light": "/logo/favicon.png"
   },
   "favicon": "/logo/favicon.png",
   "colors": {
