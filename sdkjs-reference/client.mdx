@@ -51,7 +51,7 @@ Using the `DSCloudSDK`, you can retrieve details about the user associated with 
 
 ```javascript
 const user = await api.getUser();
-const application = api.getApplication("Application ID");
+const application = await api.getApplication("Application ID");
 
 console.log(user.applications); // List of applications
 ```
@@ -63,7 +63,7 @@ With the `DSCloudAPI` client, you can access and manage your applications easily
 ### Listing All Applications
 
 ```javascript
-const application = api.getApplications("Application ID");
+const application = await api.getApplications("Application ID");
 
 console.log(application); // List of applications
 ```
