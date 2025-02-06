@@ -2,7 +2,7 @@
 title: "GitHub Webhook Integration"
 sidebarTitle: "[...]/deploy/webhook"
 description: "Integrate Ds Cloud with GitHub webhooks."
-api: "POST https:/api.dscloud.pt/v1/apps/{app_id}/deploy/webhook"
+api: "POST https:/api.dscloud.pt/v3/apps/{app_id}/deploy/webhook"
 authMethod: "none"
 ---
 
@@ -45,7 +45,7 @@ The contents of the response.
 {
     "status": "success",
     "response": { 
-        "webhook": "http://webhook.dscloud.pt/v1/git/webhook/eyJhdXRoIjoiYWJjMTIzIiwidHlwIjoiand0In0.eyJhcHBfaWQiOiJiNzMwNmQ0MSIsInVzZXJfaWQiOjIsImlhdCI6MTczMzE3MjYyOCwiZXhwIjoxNzMzMTc2MjI4fQ.Vp1aLdvL5dTCkz8jtQ8nJoIhY12Gl5GhGdm_LNvsDXE"
+        "webhook": "http://webhook.dscloud.pt/v3/git/webhook/eyJhdXRoIjoiYWJjMTIzIiwidHlwIjoiand0In0.eyJhcHBfaWQiOiJiNzMwNmQ0MSIsInVzZXJfaWQiOjIsImlhdCI6MTczMzE3MjYyOCwiZXhwIjoxNzMzMTc2MjI4fQ.Vp1aLdvL5dTCkz8jtQ8nJoIhY12Gl5GhGdm_LNvsDXE"
     },
 }
 ```
